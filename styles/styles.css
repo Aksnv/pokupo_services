@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'museo_sans_cyrl100';
+  src: url('../fonts/museosanscyrl_100-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_100-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_cyrl300';
+  src: url('../fonts/museosanscyrl_300-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_300-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_cyrl500';
+  src: url('../fonts/museosanscyrl_500-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_500-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_cyrl700';
+  src: url('../fonts/museosanscyrl_700-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_700-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_cyrl900';
+  src: url('../fonts/museosanscyrl_900-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_900-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  overflow-x: hidden;
+  max-width: 1890px;
+  font-family: 'museo_sans_cyrl500', sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 0;
+  color: #000;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'museo_sans_cyrl500';
+  font-size: 30px;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  outline: none;
+}
+
+a[href^=tel] {
+  text-decoration: none;
+  color: #000;
+}
+
+strong > a {
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    color: #f9b500;
+    background: #f9b500;
+}
+
+.container {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.error, 
+.success {
+  margin: 10px;
+} */
+
+/* Header */
