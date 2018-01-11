@@ -42,6 +42,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'museo_sans_cyrl500', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+
 /* body {
   overflow-x: hidden;
   max-width: 1890px;
@@ -116,4 +123,14 @@ strong > a {
   margin: 10px;
 } */
 
+.container {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+}
+
 /* Header */
+
+.container--header {
+  width: 1240px;
+}

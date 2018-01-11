@@ -3,21 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>Репетитор по математике</title>
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="#"><img src="../images/maths/logo.png" alt="Услуги репетитора"></a>
+  <header class="service-header">
+    <div class="container container--header">
+      <div class="service-header__logo">
+        <a href="#"><img src="../images/maths/logo.png" alt="Услуги репетитора"></a>
+      </div>
+      <nav class="service-header__menu">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О преподавателе</a></li>
+          <li><a href="#">Программа</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="service-header__contacts">
+        <strong class="service-header__contacts-phone">8 123 456-78-90</strong>
+        <a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </nav>
   </header>
+
+  <footer class="service-footer">
+    <div class="container">
+      <div class="service-footer__block">
+        <ul>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Как продавать</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="service-footer__block">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Подарочные карты</a></li>
+        </ul>
+      </div>
+      <div class="service-footer__block service-footer__block--right">
+        <div class="service-footer__social">
+          <ul>
+            <li><a href="#">Vkontakte</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Livejournal</a></li>
+            <li><a href="#">Habrahabr</a></li>
+            <li><a href="#">Google+</a></li>
+          </ul>
+        </div>
+        <form name="service-footer__subscribe-form" method="POST" action="#" class="service-footer__subscribe-form">
+          <input type="email" name="subscribe-form__email" placeholder="Ваш email">
+          <input type="submit" name="subscribe-form__submit">
+        </form>
+        <div class="service-footer__copyrights">
+          <p>Работает на основе технологии <a href="https://pokupo.ru/">Pokupo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 </html>
