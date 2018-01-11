@@ -129,6 +129,10 @@ strong > a {
   margin: 0 auto;
 }
 
+.br {
+  display: block;
+}
+
 /* Header */
 
 .container--header {
