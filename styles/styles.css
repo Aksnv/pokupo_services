@@ -138,3 +138,10 @@ strong > a {
 .container--header {
   width: 1240px;
 }
+
+
+/* Feedback */
+
+.container--feedback {
+  width: 1340px;
+}
