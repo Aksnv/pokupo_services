@@ -55,14 +55,31 @@ section {
   clear: both;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
+  text-align: center;
 }
 
 h1 {
   font-family: 'museo_sans_cyrl900';
   font-size: 60px;
   line-height: 60px;
+}
+
+h2 {
+  font-family: 'museo_sans_cyrl300';
+  font-size: 50px;
+  line-height: 50px;
+}
+
+h3 {
+  font-family: 'museo_sans_cyrl300';
+  font-size: 30px;
+  line-height: 30px;
+}
+
+h4 {
+  font-family: 'museo_sans_cyrl700';
 }
 
 ul {
@@ -75,22 +92,7 @@ p {
   margin: 0;
 }
 
-/* body {
-  overflow-x: hidden;
-  max-width: 1890px;
-  font-family: 'museo_sans_cyrl500', sans-serif;
-  font-size: 15px;
-  margin: 0 auto;
-  padding: 0;
-  color: #000;
-}
-
-h2 {
-  font-family: 'museo_sans_cyrl500';
-  font-size: 30px;
-  font-weight: 300;
-}
-
+/* 
 a {
   outline: none;
 }
@@ -100,33 +102,8 @@ a[href^=tel] {
   color: #000;
 }
 
-strong > a {
-  text-decoration: none;
-  color: #000;
-  cursor: default;
-}
-
-::-webkit-scrollbar {
-    width: 4px;
-    padding-right: 9px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-    color: #f9b500;
-    background: #f9b500;
-}
-
 .nowrap {
   white-space: nowrap;
-}
-
-.error, 
-.success {
-  margin: 10px;
 } */
 
 .container {
@@ -141,6 +118,39 @@ strong > a {
 
 .inline-link {
   color: #f9b500;
+}
+
+.button {
+  display: block;
+  width: 328px;
+  height: 60px;
+  font-family: 'museo_sans_cyrl700';
+  font-size: 16px;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    color: #f9b500;
+    background: #f9b500;
 }
 
 /* Service header */
@@ -257,6 +267,10 @@ strong > a {
   color: #fff;
 }
 
+.service-name h1 {
+  margin-bottom: 27px;
+}
+
 .service-name h1 > span {
   font-family: 'museo_sans_cyrl300';
   font-size: 30px;
@@ -264,8 +278,120 @@ strong > a {
   color: white;
 }
 
+.service-name p {
+  margin-bottom: 27px;
+}
 
-/* Feedback */
+.service-name p.service-name__price {
+  font-family: 'museo_sans_cyrl300';
+  font-size: 30px;
+  margin-bottom: 73px;
+}
+
+.service-name button {
+  background-color: #ffb900;
+}
+
+/* Service person */
+
+.service-person {
+  overflow: hidden;
+  min-height: 822px;
+  padding-top: 59px;
+  background-color: #f9b500;
+  background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
+  color: #fff;
+}
+
+.service-person h2 {
+  margin-bottom: 64px;
+}
+
+.service-person h3 {
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.service-person h4 {
+  text-align: left;
+}
+
+.service-person p {
+  margin-bottom: 26px;
+}
+
+.service-person__photo,
+.service-person__about {
+  float: left;
+}
+
+.service-person__photo {
+  width: 530px;
+  margin-left: 5px;
+  margin-right: 65px;
+}
+
+.service-person__photo img {
+  width: auto;
+  max-width: 530px;
+  height: auto;
+  max-height: 530px;
+}
+
+.service-person__about {
+  width: 580px;
+  padding-top: 70px;
+  margin-bottom: 29px;
+}
+
+.service-person__about {
+  font-family: 'museo_sans_cyrl300';
+}
+
+.service-person__about ul {
+  list-style-type: disc;
+  margin-bottom: 24px;
+  padding-left: 18px;
+}
+
+.service-person__social li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.service-person__social-item {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+}
+
+.service-person__social-item--fb {
+  background-image: url("../images/icons/fb.png");
+}
+
+.service-person__social-item--vk {
+  background-image: url("../images/icons/vk.png");
+}
+
+.service-person__social-item--ig {
+  background-image: url("../images/icons/ig.png");
+}
+
+.service-person__social-item--yt {
+  background-image: url("../images/icons/yt.png");
+}
+
+.service-person__social-item--gp {
+  background-image: url("../images/icons/gp.png");
+}
+
+.service-person__social-item--tg {
+  background-image: url("../images/icons/tg.png");
+}
+
+/* Service feedback */
 
 .container--feedback {
   width: 1340px;
