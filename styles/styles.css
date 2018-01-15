@@ -92,6 +92,10 @@ p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* 
 a {
   outline: none;
@@ -137,6 +141,45 @@ a[href^=tel] {
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
   outline: none;
   cursor: pointer;
+}
+
+.navigation-button {
+  position: absolute;
+  top: 36%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.navigation-button::before {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  content: "";
+  display: block;
+  width: 11px;
+  height: 18px;
+  background-image: url("../images/maths/button_arrow.png");
+}
+
+.navigation-button--back {
+  left: 0;
+}
+
+.navigation-button--forward {
+  right: 0;
+}
+
+.navigation-button--forward::before {
+  top: 12px;
+  left: 15px;
+  transform: rotate(180deg);
 }
 
 ::-webkit-scrollbar {
@@ -473,11 +516,106 @@ a[href^=tel] {
   height: 135px;
 }
 
+.service-description__image img {
+  width: auto;
+  height: auto;
+  max-height: 135px;
+}
+
 .service-description__text {
   font-size: 15px;
   line-height: 20px;
   padding-top: 34px;
 }
+
+/* Service program */
+
+.service-program {
+  position: relative;
+  padding-top: 69px;
+}
+
+.service-program h2 {
+  margin-bottom: 16px;
+}
+
+.service-program__item {
+  display: none;
+  width: 580px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service-program__item h3 {
+  line-height: 34px;
+  margin-bottom: 53px;
+}
+
+.service-program__item h4 {
+  font-family: 'museo_sans_cyrl900';
+  padding-top: 29px;
+}
+
+.service-program__item--active {
+  display: block;
+}
+
+.service-program__item-image {
+  display: table-cell;
+  vertical-align: top;
+  width: 580px;
+  height: 135px;
+  text-align: center;
+}
+
+.service-program__item-image img {
+  width: auto;
+  height: auto;
+  max-height: 135px;
+}
+
+.service-program__item ul,
+.service-program__item p {
+  margin-bottom: 30px;
+}
+
+.service-program__item li > span {
+  position: relative;
+}
+
+.service-program__item li > span:before {
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.service-program p.service-program__price {
+  font-size: 30px;
+  margin-bottom: 64px;
+}
+
+.service-program button {
+  background-color: #ed1c24;
+  margin-bottom: 63px;
+}
+
+.service-program button.navigation-button {
+  background-color: #ff7338;
+}
+
+/* Service reviews */
+
+.service-reviews {
+  background-color: #edebe2;
+}
+
+
 
 /* Service feedback */
 
