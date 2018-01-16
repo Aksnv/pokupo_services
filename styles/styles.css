@@ -776,7 +776,194 @@ a[href^=tel] {
 
 /* Service feedback */
 
+.service-feedback {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 49px;
+  background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
+}
+
 .container--feedback {
   width: 1340px;
-  background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
+}
+
+.service-feedback__offer,
+.service-feedback__form {
+  float: left;
+}
+
+.service-feedback__offer {
+  position: relative;
+  width: 539px;
+  margin-right: 144px;
+  padding-top: 115px;
+  padding-left: 81px;
+  padding-bottom: 124px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 36%;
+  border-bottom-right-radius: 36%;
+  background-color: #fff;
+}
+
+.service-feedback__offer::after {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  content: "";
+  display: block;
+  width: 431px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.service-feedback__offer h3 {
+  position: relative;
+  max-width: 400px;
+  text-align: left;
+  margin-bottom: 17px;
+  z-index: 1;
+}
+
+.service-feedback__offer > p {
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.service-feedback__offer > p strong {
+  font-family: 'museo_sans_cyrl900';
+  text-transform: uppercase;
+}
+
+.service-feedback__offer-counter {
+  position: relative;
+  padding-top: 32px;
+  padding-left: 8px; 
+}
+
+.service-feedback__offer-counter strong {
+  position: relative;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.offer-counter__minutes,
+.offer-counter__seconds {
+  font-family: 'museo_sans_cyrl900';
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 33px;
+  z-index: 1;
+}
+
+.offer-counter__minutes::before,
+.offer-counter__seconds::before {
+  position: absolute;
+  top: -9px;
+  left: -6px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 60px;
+  background-color: #f9b500;
+  border-radius: 4px;
+  z-index: -1; 
+}
+
+.offer-counter__separator {
+  font-family: 'museo_sans_cyrl900';
+  margin-left: -7px;
+  margin-right: 5px;
+  z-index: 1;
+} 
+
+.offer-counter__text {
+  position: absolute;
+  top: 56px;
+  left: 14px;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 1;
+}
+
+.offer-counter__content {
+  position: absolute;
+  top: 8px;
+  right: -92px;
+  width: 70px;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 1;
+}
+
+.service-feedback__form {
+  width: 580px;
+  padding-top: 19px;
+  color: #fff;
+}
+
+.service-feedback__form-block {
+  display: inline-block; 
+  vertical-align: top;
+  width: 280px;
+  margin-right: 15px;
+}
+
+.service-feedback__form-block:last-of-type {
+  margin-right: 0;
+}
+
+.service-feedback__form h3 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.service-feedback__form h3 > span {
+  position: relative;
+  top: -5px;
+  font-size: 15px;
+}
+
+.service-feedback__form label {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 6px;
+}
+
+.service-feedback__form input {
+  width: 580px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.service-feedback__form-block input {
+  width: 280px;
+}
+
+.service-feedback__form input:focus {
+  outline: none;
+}
+
+.service-feedback__form input[type="submit"] {
+  width: 328px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 20px;
+  background-color: #ed1c24;
+  color: #fff;
 }

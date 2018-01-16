@@ -221,23 +221,39 @@
     <div class="container container--feedback">
       <div class="service-feedback__offer">
         <h3>Спецпредложение</h3>
-        <p>Оставьте заявку прямо сейчас, чтобы получить <strong>бесплатное занятие</strong></p>
+        <p>Оставьте заявку прямо сейчас, <span class="br">чтобы получить <strong>бесплатное занятие</strong></span></p>
         <div class="service-feedback__offer-counter">
-          <p>До конца акции</p>
-          <p><span>59</span> <span>минут</span> : <span>47</span> <span>секунд</span></p>
+          <p>
+            <strong>
+              <span class="offer-counter__minutes">5</span>
+              <span class="offer-counter__minutes">9</span>
+              <span class="offer-counter__text">минут</span>
+            </strong> 
+            <strong class="offer-counter__separator">:</strong> 
+            <strong>
+              <span class="offer-counter__seconds">4</span>
+              <span class="offer-counter__seconds">7</span>
+              <span class="offer-counter__text">секунд</span>
+              <span class="offer-counter__content">До конца акции</span>
+            </strong>
+          </p>
         </div>
       </div>
       <form name="service-feedback__form" method="POST" action="#" class="service-feedback__form">
         <h3>Заполните форму <span class="br">чтобы записаться на занятие</span></h3>
         <label for="service-feedback__form-name">Контактное лицо</label>
         <input type="text" name="service-feedback__form-name" id="service-feedback__form-name">
-        <label for="service-feedback__form-email">Электронная почта</label>
-        <input type="email" name="service-feedback__form-email" id="service-feedback__form-email">
-        <label for="service-feedback__form-phone">Контактный телефон</label>
-        <input type="text" name="service-feedback__form-phone" id="service-feedback__form-phone">
+        <div class="service-feedback__form-block">
+          <label for="service-feedback__form-email">Электронная почта</label>
+          <input type="email" name="service-feedback__form-email" id="service-feedback__form-email">
+        </div>
+        <div class="service-feedback__form-block">
+          <label for="service-feedback__form-phone">Контактный телефон</label>
+          <input type="text" name="service-feedback__form-phone" id="service-feedback__form-phone">
+        </div>
         <label for="service-feedback__form-text">Описание запроса</label>
         <input type="text" name="service-feedback__form-text" id="service-feedback__form-text">
-        <input type="submit" name="service-feedback__form-submit" id="service-feedback__form-submit" value="Записаться на занятие">
+        <input type="submit" name="service-feedback__form-submit" id="service-feedback__form-submit" class="button" value="Записаться на занятие">
       </form>
     </div>
   </section>
