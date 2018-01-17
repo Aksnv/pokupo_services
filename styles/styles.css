@@ -143,6 +143,11 @@ a[href^=tel] {
   cursor: pointer;
 }
 
+button[disabled="disabled"] {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .navigation-button {
   position: absolute;
   top: 36%;
@@ -622,11 +627,15 @@ a[href^=tel] {
 }
 
 .service-reviews__block {
-  display: table;
+  display: none;
   width: 968px;
   margin: 0 auto;
   margin-bottom: 43px;
   border-spacing: 24px 0;
+}
+
+.service-reviews__block--active {
+  display: table;
 }
 
 .service-reviews__item {
@@ -635,7 +644,7 @@ a[href^=tel] {
   font-size: 15px;
   text-align: left;
   margin-right: 20px;
-  padding: 35px 82px;
+  padding: 35px 75px;
   background-color: white;
   border-radius: 8px;
 }
