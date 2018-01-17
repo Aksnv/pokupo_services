@@ -1013,6 +1013,10 @@ a[href^=tel] {
 
 /* Service map */
 
+.service-map {
+  height: auto;
+}
+
 .service-map__header {
   text-align: center;
   padding-top: 46px;
@@ -1025,6 +1029,10 @@ a[href^=tel] {
   margin-bottom: 22px;
 }
 
+.service-map__map {
+  height: 548px;
+}
+
 .service-map iframe {
   width: 100%;
   height: 548px;
@@ -1032,3 +1040,174 @@ a[href^=tel] {
 
 /* Service footer */
 
+.service-footer {
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 25px;
+  padding-top: 52px;
+  padding-bottom: 32px;
+  background-color: #292b2c;
+  color: #666;
+}
+
+.service-footer a {
+  text-decoration: none;
+  color: #666;
+}
+
+.service-footer a:hover {
+  color: #ccc;
+}
+
+.service-footer__block {
+  float: left;
+  margin-right: 151px;
+}
+
+.service-footer__block--right {
+  float: right;
+  margin-right: 0;
+}
+
+.service-footer__social ul {
+  text-align: right;
+  margin-bottom: 57px;
+  padding-top: 9px;
+}
+
+.service-footer__social li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  margin-right: 17px;
+}
+
+.service-footer__social li:last-child {
+  margin-right: 0;
+}
+
+.service-footer__social-item {
+  position: relative;
+  display: block;
+}
+
+.service-footer__social-item--vk {
+  top: 2px;
+  left: 0;
+  width: 25px;
+  height: 15px;
+  background-image: url("../images/icons/vk_grey.png");
+}
+
+.service-footer__social-item--fb {
+  top: 0;
+  left: 2px;
+  width: 9px;
+  height: 20px;
+  background-image: url("../images/icons/fb_grey.png");
+}
+
+.service-footer__social-item--tw {
+  top: 1px;
+  left: 4px;
+  width: 25px;
+  height: 18px;
+  background-image: url("../images/icons/tw_grey.png");
+}
+
+.service-footer__social-item--lj {
+  top: -1px;
+  left: 1px;
+  width: 18px;
+  height: 20px;
+  background-image: url("../images/icons/lj_grey.png");
+}
+
+.service-footer__social-item--hh {
+  top: 0;
+  left: 3px;
+  width: 15px;
+  height: 19px;
+  background-image: url("../images/icons/hh_grey.png");
+}
+
+.service-footer__social-item--gp {
+  top: 1px;
+  left: 2px;
+  width: 26px;
+  height: 17px;
+  background-image: url("../images/icons/gp_grey.png");
+}
+
+.service-footer__subscribe-form {
+  position: relative;
+  text-align: right;
+  margin-bottom: 27px;
+}
+
+.service-footer__subscribe-form::after {
+  position: absolute;
+  top: 6px;
+  right: 40px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+}
+
+.subscribe-form__email {
+  width: 220px;
+  height: 42px;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 13px;
+  line-height: 42px;
+  padding-left: 12px;
+  padding-right: 52px;
+  background-color: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-form__email:focus {
+  outline: none;
+}
+
+.subscribe-form__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../images/maths/button_subscribe.png");
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.service-footer__copyrights {
+  position: relative;
+  color: #ccc;
+}
+
+.service-footer__copyrights::before {
+  position: absolute;
+  top: 5px;
+  left: -46px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 15px;
+  background-image: url("../images/maths/logo_pokupo.png");
+}
+
+.service-footer__copyrights a {
+  text-decoration: underline;
+  color: #ccc;
+}

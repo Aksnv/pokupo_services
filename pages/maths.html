@@ -304,7 +304,9 @@
         <p>Адрес: Москва, ул. Развивающая, д. 67</p>
       </div>      
     </div>
-    <iframe src="https://yandex.ru/map-widget/v1/-/CVspUU7y" width="560" height="400" frameborder="0"></iframe>
+    <div class="service-map__map">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CVspUU7y" frameborder="0"></iframe>
+    </div>
   </section>
 
   <footer class="service-footer">
@@ -330,17 +332,17 @@
       <div class="service-footer__block service-footer__block--right">
         <div class="service-footer__social">
           <ul>
-            <li><a href="#">Vkontakte</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Livejournal</a></li>
-            <li><a href="#">Habrahabr</a></li>
-            <li><a href="#">Google+</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--vk">Vkontakte</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--fb">Facebook</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--tw">Twitter</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--lj">Livejournal</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--hh">Habrahabr</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--gp">Google+</a></li>
           </ul>
         </div>
         <form name="service-footer__subscribe-form" method="POST" action="#" class="service-footer__subscribe-form">
-          <input type="email" name="subscribe-form__email" placeholder="Ваш email">
-          <input type="submit" name="subscribe-form__submit">
+          <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="Ваш email" >
+          <input type="submit" name="subscribe-form__submit" class="subscribe-form__submit" value="">
         </form>
         <div class="service-footer__copyrights">
           <p>Работает на основе технологии <a href="https://pokupo.ru/">Pokupo</a></p>
