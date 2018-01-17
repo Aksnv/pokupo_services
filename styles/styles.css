@@ -967,3 +967,56 @@ a[href^=tel] {
   background-color: #ed1c24;
   color: #fff;
 }
+
+/* Service team */
+
+.service-team {
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 54px;
+}
+
+.service-team h2 {
+  margin-bottom: 61px;
+}
+
+.service-team__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-right: 65px;
+}
+
+.service-team__item:last-child {
+  margin-right: 0;
+}
+
+.service-team__item-image {
+  margin-bottom: 28px;
+}
+
+.service-team__item-content h4  {
+  font-family: 'museo_sans_cyrl900';
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+.service-team__item-content h4 > span,
+.service-team__item-content p {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.service-team__item-content p {
+  margin-bottom: 10px;
+}
+
+/* Service map */
+
+.service-map__header {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #ffa008;
+  color: #fff;
+}
