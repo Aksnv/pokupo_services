@@ -170,7 +170,7 @@ button[disabled="disabled"] {
   display: block;
   width: 11px;
   height: 18px;
-  background-image: url("../images/maths/button_arrow.png");
+  background-image: url("../images/icons/button_arrow.png");
 }
 
 .navigation-button--back {
@@ -188,17 +188,17 @@ button[disabled="disabled"] {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
-    padding-right: 9px;
+  width: 4px;
+  padding-right: 9px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-    color: #f9b500;
-    background: #f9b500;
+  color: #f9b500;
+  background: #f9b500;
 }
 
 /* Service header */
@@ -491,6 +491,8 @@ button[disabled="disabled"] {
   padding-top: 81px;
   padding-bottom: 13px; 
   background-color: #f9b500;
+  background-image: none;
+  color: #000;
 }
 
 .service-description h3 {
@@ -620,6 +622,7 @@ button[disabled="disabled"] {
   padding-top: 48px;
   padding-bottom: 34px;
   background-color: #edebe2;
+  color: #000;
 }
 
 .service-reviews h3 {
@@ -646,6 +649,7 @@ button[disabled="disabled"] {
   margin-right: 20px;
   padding: 35px 75px;
   background-color: white;
+  color: #000;
   border-radius: 8px;
 }
 
@@ -1239,7 +1243,7 @@ button[disabled="disabled"] {
   display: block;
   width: 30px;
   height: 15px;
-  background-image: url("../images/maths/logo_pokupo.png");
+  background-image: url("../images/icons/logo_pokupo.png");
 }
 
 .service-footer__copyrights a {
@@ -1358,7 +1362,7 @@ button[disabled="disabled"] {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url("../images/maths/button_close.png");
+  background-image: url("../images/icons/button_close.png");
   background-color: transparent;
   border: none;
   outline: none;

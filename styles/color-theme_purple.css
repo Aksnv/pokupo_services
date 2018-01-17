@@ -1,0 +1,70 @@
+::-webkit-scrollbar-thumb {
+  color: #ed1c24;
+  background: #ed1c24;
+}
+
+.service-name {
+  background-image: url("../images/english/bg.png");
+}
+
+.service-name button {
+  background-color: #ed1c24;
+}
+
+.service-person {
+  background-color: #fff;
+  background-image: none;
+  color: #000;
+}
+
+.service-description {
+  background-color: #ccc;
+  background-image: linear-gradient(to right, #174567 0%, #00a3c6 100%);
+  color: #fff;
+}
+
+.service-program button.navigation-button {
+  background-color: #ed1c24;
+}
+
+.service-reviews {
+  background-color: #62406b;
+  color: #fff;
+}
+
+.service-reviews__item {
+  color: #000;
+}
+
+.service-reviews button.navigation-button {
+  background-color: #ed1c24;
+}
+
+.service-reviews__pagination-item--active {
+  background-color: #ed1c24;
+}
+
+.service-order__item button:hover {
+  background-color: #ed1c24;
+}
+
+.service-order__item--active {
+  border: 2px solid #ed1c24;
+}
+
+.service-feedback {
+  background-image: linear-gradient(to right, #39062a 0%, #623657 100%);
+}
+
+.service-map__header {
+  background-color: #edebe2;
+  color: #000;
+}
+
+.service-footer {
+  background-color: #fff;
+}
+
+.subscribe-form__submit {
+  background-image: url("../images/english/button_subscribe.png");
+}
