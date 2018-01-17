@@ -68,3 +68,12 @@
 .subscribe-form__submit {
   background-image: url("../images/english/button_subscribe.png");
 }
+
+.service-popup {
+  background-color: #62406b;
+  color: #fff;
+}
+
+.service-cooperation__form label {
+  color: #fff;
+}

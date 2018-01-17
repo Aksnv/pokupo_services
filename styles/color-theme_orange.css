@@ -1,0 +1,79 @@
+::-webkit-scrollbar-thumb {
+  color: #f9b500;
+  background: #f9b500;
+}
+
+.service-name {
+  background-image: url("../images/maths/bg.png");
+}
+
+.service-name button {
+  background-color: #ffb900;
+}
+
+.service-person {
+  background-color: #f9b500;
+  background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
+  color: #fff;
+}
+
+.service-description {
+  background-color: #f9b500;
+  background-image: none;
+  color: #000;
+}
+
+.service-program button.navigation-button {
+  background-color: #ff7338;
+}
+
+.service-reviews {
+  background-color: #edebe2;
+  color: #000;
+}
+
+.service-reviews__item {
+  color: #000;
+}
+
+.service-reviews button.navigation-button {
+  background-color: #f9b500;
+}
+
+.service-reviews__pagination-item--active {
+  background-color: #f9b500;
+}
+
+.service-order__item button:hover {
+  background-color: #f9b500;
+}
+
+.service-order__item--active {
+  border: 2px solid #f9b500;
+}
+
+.service-feedback {
+  background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
+}
+
+.service-map__header {
+  background-color: #ffa008;
+  color: #fff;
+}
+
+.service-footer {
+  background-color: #292b2c;
+}
+
+.subscribe-form__submit {
+  background-image: url("../images/maths/button_subscribe.png");
+}
+
+.service-popup {
+  background-color: #f4c23d;
+  color: #000;
+}
+
+.service-cooperation__form label {
+  color: #000;
+}
