@@ -995,6 +995,13 @@ a[href^=tel] {
   margin-bottom: 28px;
 }
 
+.service-team__item-image img {
+  width: auto;
+  max-width: 190px;
+  height: auto;
+  max-height: 190px;
+}
+
 .service-team__item-content h4  {
   font-family: 'museo_sans_cyrl900';
   font-size: 20px;
@@ -1210,4 +1217,122 @@ a[href^=tel] {
 .service-footer__copyrights a {
   text-decoration: underline;
   color: #ccc;
+}
+
+/* Service overlay */
+
+.service-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 100;
+}
+
+.service-overlay--active {
+  display: block;
+}
+
+/* Service overlay */
+
+.service-popup {
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 440px);
+  display: none;
+  width: 881px;
+  text-align: center;
+  padding-top: 77px;
+  padding-bottom: 40px;
+  background-color: #f4c23d;
+  border-radius: 8px;
+  z-index: 101;
+}
+
+.service-popup--active {
+  display: block;
+}
+
+.service-popup h3 {
+  margin-bottom: 10px;
+}
+
+.service-popup p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.service-cooperation__form {
+  width: 580px;
+  margin: 0 auto;
+  padding-top: 36px;
+  color: #000;
+}
+
+.service-cooperation__form-block {
+  display: inline-block; 
+  vertical-align: top;
+  width: 280px;
+  margin-right: 15px;
+}
+
+.service-cooperation__form-block:last-of-type {
+  margin-right: 0;
+}
+
+.service-cooperation__form label {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.service-cooperation__form input {
+  width: 580px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.service-cooperation__form-block input {
+  width: 280px;
+}
+
+.service-cooperation__form input:focus {
+  outline: none;
+}
+
+.service-cooperation__form input[type="submit"] {
+  width: 328px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 20px;
+  background-color: #ed1c24;
+  color: #fff;
+}
+
+.close-button {
+  position: absolute;
+  top: 19px;
+  right: 21px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/maths/button_close.png");
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

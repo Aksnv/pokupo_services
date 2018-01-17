@@ -21,3 +21,15 @@ $(document).ready(function() {
     $($(".service-order__item h4")[i]).css("height", maxHeight);
   }
 });
+
+/* Popup form */
+
+$(".button--popup").click(function() {
+  $(".service-overlay").addClass("service-overlay--active");
+  $(".service-popup").addClass("service-popup--active");
+});
+
+$(".close-button").click(function() {
+  $(".service-overlay").removeClass("service-overlay--active");
+  $(".service-popup").removeClass("service-popup--active");
+});

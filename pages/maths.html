@@ -32,7 +32,7 @@
       <h1>Репетитор <span class="br">по математике</span></h1>
       <p>Комплексное число последовательно. Теорема Ферма очевидна не для всех. Бесконечно малая величина развивает расходящийся ряд. Аффинное преобразование, не вдаваясь в подробности, порождает отрицательный интеграл Фурье. Частная производная изящно продуцирует максимум.</p>
       <p class="service-name__price"><strong>от 500 руб</strong></p>
-      <button class="button">Оставить заявку</button>
+      <button class="button button--popup">Оставить заявку</button>
     </div>
   </section>
 
@@ -150,7 +150,7 @@
         </ul>
         <p class="service-program__price"><strong>Стоимость &ndash; 500 руб. / 45 мин.</strong></p>
       </div>
-      <button class="button">Оставить заявку</button>
+      <button class="button button--popup">Оставить заявку</button>
       <button class="navigation-button navigation-button--back">Назад</button>
       <button class="navigation-button navigation-button--forward">Вперед</button>
     </div>
@@ -358,15 +358,19 @@
     <form name="service-cooperation__form" method="POST" action="#" class="service-cooperation__form">
       <label for="service-cooperation__form-name">Контактное лицо</label>
       <input type="text" name="service-cooperation__form-name" id="service-cooperation__form-name">
-      <label for="service-cooperation__form-email">Электронная почта</label>
-      <input type="email" name="service-cooperation__form-email" id="service-cooperation__form-email">
-      <label for="service-cooperation__form-phone">Контактный телефон</label>
-      <input type="text" name="service-cooperation__form-phone" id="service-cooperation__form-phone">
+      <div class="service-cooperation__form-block">
+        <label for="service-cooperation__form-email">Электронная почта</label>
+        <input type="email" name="service-cooperation__form-email" id="service-cooperation__form-email">
+      </div>
+      <div class="service-cooperation__form-block">
+        <label for="service-cooperation__form-phone">Контактный телефон</label>
+        <input type="text" name="service-cooperation__form-phone" id="service-cooperation__form-phone">
+      </div>
       <label for="service-cooperation__form-text">Описание запроса</label>
       <input type="text" name="service-cooperation__form-text" id="service-cooperation__form-text">
-      <input type="submit" name="service-cooperation__form-submit" id="service-cooperation__form-submit" value="Оставить заявку">
+      <input type="submit" name="service-cooperation__form-submit" id="service-cooperation__form-submit" class="button" value="Оставить заявку">
     </form>
-    <button>Закрыть</button>
+    <button class="close-button"></button>
   </div>
 
   <script type="text/javascript" src="../scripts/jquery-3.2.1.min.js"></script>
