@@ -3,6 +3,10 @@
   background: #f9b500;
 }
 
+.service-header__menu-item::after {
+  background-color: #ffb900;
+}
+
 .service-name {
   background-image: url("../images/maths/bg.png");
 }

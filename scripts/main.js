@@ -1,3 +1,13 @@
+/* Menu button */
+
+$(".service-header__menu-button").click(function() {
+  $(this).toggleClass("service-header__menu-button--close");
+  /*$(".service-header").toggleClass("service-header--open")*/;
+  $(".service-header__logo").toggleClass("service-header__logo--open");
+  $(".service-header__menu").toggleClass("service-header__menu--open");
+});
+
+
 /* Service order item hover */
 
 $(".service-order__item button").mouseover(function() {

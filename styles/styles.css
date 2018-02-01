@@ -96,7 +96,6 @@ img {
   max-width: 100%;
 }
 
-/* 
 a {
   outline: none;
 }
@@ -105,10 +104,6 @@ a[href^=tel] {
   text-decoration: none;
   color: #000;
 }
-
-.nowrap {
-  white-space: nowrap;
-} */
 
 .container {
   position: relative;
@@ -204,59 +199,86 @@ button[disabled="disabled"] {
 
 .service-header {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 130px;
   background-color: #fff;
 }
 
+/* .service-header--open {
+  overflow: visible;
+} */
+
 .service-header::after {
   position: absolute;
   bottom: 0;
-  left: calc(50% - 960px);
+  left: 0;
+  /* left: calc(50% - 960px); */
   content: "";
-  width: 1920px;
+  /* width: 1920px; */
+  width: 100%;
   height: 3px;
   background-image: linear-gradient(to top, #e2e2e2 0%, #d6d6d6 100%);
 }
 
-.service-header__logo,
+/* .service-header--open::after {
+  width: 100%;
+  left: 0;
+} */
+
+.service-header__menu-button {
+  position: absolute;
+  top: 57px;
+  left: 50px;
+  display: inline-block;
+  vertical-align: top;
+  width: 19px;
+  height: 15px;
+  background-image: url("../images/icons/menu.png");
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: left 0.5s ease-out;
+}
+
+.service-header__menu-button--close {
+  left: 370px;
+  height: 19px;
+  background-image: url("../images/icons/menu_close.png");
+}
+
 .service-header__menu {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: -320px;
+  display: block;
+  width: 320px;
+  height: 800px;
+  padding-top: 267px;
+  padding-left: 83px;
+  background-color: #e8e6d9;
+  transition: all 0.5s ease-out;
+  z-index: 2;
+  /* max-width: 600px;
+  margin-top: 52px; */
 }
 
-.service-header__contacts {
-  float: right;
-}
-
-.service-header__logo {
-  width: 213px;
-  height: 53px;
-  margin-right: 142px;
-  padding-top: 39px;
-}
-
-.service-header__logo img {
-  width: auto;
-  max-width: 213px;
-  height: auto;
-  max-height: 53px;
-}
-
-.service-header__menu {
-  max-width: 600px;
-  padding-top: 52px;
+.service-header__menu--open {
+  left: 0;
 }
 
 .service-header__menu li {
-  display: inline-block;
+  display: block;
+  margin-bottom: 35px;
+  /* display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 20px; */
 }
 
 .service-header__menu-item {
   position: relative;
   font-family: 'museo_sans_cyrl700';
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
@@ -265,12 +287,13 @@ button[disabled="disabled"] {
 .service-header__menu-item::after {
   position: absolute;
   left: 0;
-  bottom: -57px;
+  bottom: -5px;
+  /* bottom: -57px; */
   content: "";
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #ed1c24;
+  /* background-color: #ed1c24; */
   opacity: 0;
   transition: all 0.5s ease-out;
   z-index: 1;
@@ -281,9 +304,43 @@ button[disabled="disabled"] {
   opacity: 1;
 }
 
+.service-header__logo/* ,
+.service-header__menu */ {
+  float: left;
+}
+
 .service-header__contacts {
+  float: right;
+}
+
+.service-header__logo {
+  width: 213px;
+  height: 53px;
+  margin-top: 39px;
+  margin-left: 93px;
+  margin-right: 142px;
+  transition: all 0.5s ease-out;
+}
+
+/* .service-header__logo--open {
+  margin-left: 413px;
+} */
+
+.service-header__logo a {
+  display: inline-block;
+}
+
+.service-header__logo img {
+  display: block;
+  width: auto;
+  max-width: 213px;
+  height: auto;
+  max-height: 53px;
+}
+
+.service-header__contacts {
+  margin-top: 48px;
   margin-right: 25px;
-  padding-top: 48px;
 }
 
 .service-header__contacts-phone {
@@ -307,6 +364,7 @@ button[disabled="disabled"] {
 /* Service name */
 
 .service-name {
+  position: relative;
   min-height: 670px;
   text-align: center;
   padding-top: 134px;
@@ -375,9 +433,13 @@ button[disabled="disabled"] {
   text-align: center;
   margin-left: 5px;
   margin-right: 65px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .service-person__photo img {
+  display: block;
   width: auto;
   max-width: 530px;
   height: auto;
@@ -1048,13 +1110,14 @@ button[disabled="disabled"] {
 }
 
 .service-map__map {
-  height: 548px;
-}
-
-.service-map iframe {
   width: 100%;
   height: 548px;
 }
+
+/* .service-map iframe {
+  width: 100%;
+  height: 548px;
+} */
 
 /* Service footer */
 
@@ -1344,4 +1407,12 @@ button[disabled="disabled"] {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1915px) {
+
+  .service-header__logo--open {
+    margin-left: 413px;
+  }
+
 }

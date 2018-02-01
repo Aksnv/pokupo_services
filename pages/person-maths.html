@@ -5,22 +5,24 @@
   <title>Репетитор по математике</title>
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   <link rel="stylesheet" type="text/css" href="../styles/color-theme_orange.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <header class="service-header">
+    <button class="service-header__menu-button"></button>
+    <nav class="service-header__menu">
+      <ul>
+        <li><a href="#" class="service-header__menu-item service-header__menu-item--1 service-header__menu-item--active">Главная</a></li>
+        <li><a href="#" class="service-header__menu-item service-header__menu-item--2">О преподавателе</a></li>
+        <li><a href="#" class="service-header__menu-item service-header__menu-item--3">Программа</a></li>
+        <li><a href="#" class="service-header__menu-item service-header__menu-item--4">Отзывы</a></li>
+        <li><a href="#" class="service-header__menu-item service-header__menu-item--5">Контакты</a></li>
+      </ul>
+    </nav>
     <div class="container container--header">
       <div class="service-header__logo">
         <a href="#"><img src="../images/maths/logo.png" alt="Услуги репетитора по математике"></a>
       </div>
-      <nav class="service-header__menu">
-        <ul>
-          <li><a href="#" class="service-header__menu-item service-header__menu-item--1 service-header__menu-item--active">Главная</a></li>
-          <li><a href="#" class="service-header__menu-item service-header__menu-item--2">О преподавателе</a></li>
-          <li><a href="#" class="service-header__menu-item service-header__menu-item--3">Программа</a></li>
-          <li><a href="#" class="service-header__menu-item service-header__menu-item--4">Отзывы</a></li>
-          <li><a href="#" class="service-header__menu-item service-header__menu-item--5">Контакты</a></li>
-        </ul>
-      </nav>
       <div class="service-header__contacts">
         <p><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></p>
         <p><a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
@@ -341,9 +343,7 @@
         <p>Адрес: Москва, ул. Добролюбова, д. 25</p>
       </div>      
     </div>
-    <div class="service-map__map">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBeIbCt1DD" frameborder="0"></iframe>
-    </div>
+    <div class="service-map__map" id="map"></div>
   </section>
 
   <footer class="service-footer">
@@ -412,5 +412,26 @@
 
   <script type="text/javascript" src="../scripts/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../scripts/main.js"></script>
+
+  <!-- Yandex map -->
+  <script type="text/javascript">
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;
+
+      function init(){     
+          myMap = new ymaps.Map("map", {
+              center: [55.819353, 37.590928],
+              zoom: 9
+          });
+
+          myPlacemark = new ymaps.Placemark([55.819353, 37.590928], {
+                hintContent: '',
+                balloonContent: ''
+            });
+            
+          myMap.geoObjects.add(myPlacemark);
+      }
+  </script>
 </body>
 </html>
