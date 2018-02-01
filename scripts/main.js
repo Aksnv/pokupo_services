@@ -2,7 +2,6 @@
 
 $(".service-header__menu-button").click(function() {
   $(this).toggleClass("service-header__menu-button--close");
-  /*$(".service-header").toggleClass("service-header--open")*/;
   $(".service-header__logo").toggleClass("service-header__logo--open");
   $(".service-header__menu").toggleClass("service-header__menu--open");
 });
@@ -194,4 +193,24 @@ $(".reviews-button--back").click(function() {
       break;
     }
   }
+});
+
+
+/* Back-to-top button */
+
+(function () {
+  window.addEventListener("scroll", function(event) {
+    if ($(window).scrollTop() == 0) {
+      document.querySelector(".back-to-top").classList.remove("back-to-top--visible");
+    } else {
+      document.querySelector(".back-to-top").classList.add("back-to-top--visible");
+    }
+  });
+}());
+
+$(".back-to-top").click(function() {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
 });

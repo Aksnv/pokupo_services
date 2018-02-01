@@ -688,6 +688,7 @@ button[disabled="disabled"] {
   text-align: left;
   margin-right: 20px;
   padding: 35px 75px;
+  padding-bottom: 57px;
   background-color: white;
   border-radius: 8px;
 }
@@ -800,7 +801,7 @@ button[disabled="disabled"] {
   color: #aeb8bc;
   border: 1px solid #aeb8bc;
   box-shadow: none;
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .service-order__item button:hover {
@@ -1004,6 +1005,7 @@ button[disabled="disabled"] {
 .service-feedback__form input {
   width: 580px;
   height: 42px;
+  font-family: 'museo_sans_cyrl500', sans-serif;
   font-size: 14px;
   line-height: 42px;
   margin-bottom: 10px;
@@ -1292,6 +1294,63 @@ button[disabled="disabled"] {
   color: #ccc;
 }
 
+/* Back-to-top button */
+
+.back-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.back-to-top::after {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-image: url("../images/icons/back-to-top_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 19px 21px;
+  background-color: #efece7;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.back-to-top--visible {
+  opacity: 1;
+}
+
+.back-to-top--visible:hover::before {
+  position: fixed;
+  right: 77px;
+  bottom: 58px;
+  content: "Наверх";
+  display: block;
+  width: 114px;
+  height: 39px;
+  font-family: 'museo_sans_cyrl900';
+  font-size: 14px;
+  line-height: 39px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 45px;
+  color: white;
+  border-radius: 1px;
+  z-index: 9;
+}
+
 /* Service overlay */
 
 .service-overlay {
@@ -1365,6 +1424,7 @@ button[disabled="disabled"] {
 }
 
 .service-cooperation__form input {
+  font-family: 'museo_sans_cyrl500', sans-serif;
   width: 580px;
   height: 42px;
   font-size: 14px;

@@ -81,3 +81,7 @@
 .service-cooperation__form label {
   color: #fff;
 }
+
+.back-to-top--visible:hover::before {
+  background-color: #029cbf;
+}
