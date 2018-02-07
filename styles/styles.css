@@ -600,9 +600,11 @@ button[disabled="disabled"] {
 }
 
 .service-description__image img {
+  display: block;
   width: auto;
   height: auto;
   max-height: 135px;
+  margin: 0 auto;
 }
 
 .service-description__text {
