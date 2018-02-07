@@ -3,13 +3,25 @@
   background: #f9b500;
 }
 
+.service-header__menu {
+  background-color: #e8e6d9;
+}
+
+.service-header__menu-item {
+  color: #000;
+}
+
 .service-header__menu-item::after {
   background-color: #ffb900;
 }
 
-.service-name {
-  background-image: url("../images/maths/bg.png");
+.service-header__contacts-email {
+  color: #f9b500;
 }
+
+/* .service-name {
+  background-image: url("../images/maths/bg.png");
+} */
 
 .service-name button {
   background-color: #ffb900;
@@ -58,6 +70,10 @@
 
 .service-feedback {
   background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
+}
+
+.service-team button {
+  background-color: #ffb900;
 }
 
 .service-map__header {

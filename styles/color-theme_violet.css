@@ -4,11 +4,11 @@
 }
 
 .service-header__menu {
-  background-color: #e8e6d9;
+  background-color: #3e335a;
 }
 
 .service-header__menu-item {
-  color: #000;
+  color: #fff;
 }
 
 .service-header__menu-item::after {
@@ -78,7 +78,8 @@
 
 .service-map__header {
   background-color: #edebe2;
-  color: #000;
+  background-image: linear-gradient(to right, #6294b6 0%, #9369a3 100%);
+  color: #fff;
 }
 
 .service-footer {

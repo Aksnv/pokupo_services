@@ -256,7 +256,6 @@ button[disabled="disabled"] {
   height: 800px;
   padding-top: 267px;
   padding-left: 83px;
-  background-color: #e8e6d9;
   transition: all 0.5s ease-out;
   z-index: 2;
   /* max-width: 600px;
@@ -281,7 +280,6 @@ button[disabled="disabled"] {
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
 }
 
 .service-header__menu-item::after {
@@ -358,7 +356,6 @@ button[disabled="disabled"] {
   right: 3px;
   font-size: 12px;
   line-height: 21px;
-  color: #f9b500;
 }
 
 /* Service name */
@@ -395,6 +392,10 @@ button[disabled="disabled"] {
   font-family: 'museo_sans_cyrl300';
   font-size: 30px;
   margin-bottom: 73px;
+}
+
+.service-name button {
+  margin-top: 73px;
 }
 
 /* Service person */
@@ -1043,6 +1044,11 @@ button[disabled="disabled"] {
 
 .service-team h2 {
   margin-bottom: 61px;
+}
+
+.service-team button {
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .service-team__item {
