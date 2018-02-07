@@ -91,8 +91,8 @@ function countdownCounter() {
   var curentDate = new Date();
 
   if ((curentDate - finishDate) >= 0) {
-    /*$(".header-top__timer-days span").text(0);
-    $(".header-top__timer-hours span").text(0);*/
+    /*$(".header-top__timer-days span").text(0);*/
+    $(".offer-counter__hours").text(0);
     $(".offer-counter__minutes").text(0);
     $(".offer-counter__seconds").text(0);
   } else {
@@ -104,6 +104,11 @@ function countdownCounter() {
 
     /*$(".header-top__timer-days span").text(days);
     $(".header-top__timer-hours span").text(hours);*/
+    if (hours < 10) {
+      $(".offer-counter__hours").text("0" + hours);
+    } else {
+      $(".offer-counter__hours").text(hours);
+    }
     if (minutes < 10) {
       $(".offer-counter__minutes").text("0" + minutes);
     } else {
