@@ -251,10 +251,11 @@ button[disabled="disabled"] {
   position: absolute;
   top: 0;
   left: -320px;
-  display: block;
+  /* display: block; */
+  display: table;
   width: 320px;
   height: 800px;
-  padding-top: 267px;
+  /* padding-top: 267px; */
   padding-left: 83px;
   transition: all 0.5s ease-out;
   z-index: 2;
@@ -266,12 +267,28 @@ button[disabled="disabled"] {
   left: 0;
 }
 
+.service-header__menu ul {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* .service-header__menu ul {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 450px;
+} */
+
 .service-header__menu li {
   display: block;
   margin-bottom: 35px;
   /* display: inline-block;
   vertical-align: top;
   margin-right: 20px; */
+}
+
+.service-header__menu li:last-child {
+  margin-bottom: 0;
 }
 
 .service-header__menu-item {
