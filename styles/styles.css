@@ -465,6 +465,7 @@ button[disabled="disabled"] {
   max-width: 530px;
   height: auto;
   max-height: 530px;
+  border-radius: 50%;
 }
 
 .service-person__about {
