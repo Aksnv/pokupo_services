@@ -720,7 +720,7 @@ button[disabled="disabled"] {
   font-size: 15px;
   text-align: left;
   margin-right: 20px;
-  padding: 35px 75px;
+  padding: 40px 75px;
   padding-bottom: 57px;
   background-color: white;
   border-radius: 8px;
@@ -738,12 +738,18 @@ button[disabled="disabled"] {
   font-family: 'museo_sans_cyrl900';
   display: inline;
   font-size: 15px;
+  line-height: 18px;
   margin-bottom: 0;
   margin-right: 8px;
 }
 
 .service-reviews__item p {
   line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.service-reviews__item p:last-child {
+  margin-bottom: 0;
 }
 
 .service-reviews__pagination ul {
