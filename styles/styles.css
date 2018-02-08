@@ -697,6 +697,10 @@ button[disabled="disabled"] {
 
 /* Service portfolio */
 
+.container--portfolio {
+  width: 1920px;
+}
+
 .service-portfolio {
   overflow: hidden;
   position: relative;
@@ -705,21 +709,24 @@ button[disabled="disabled"] {
 }
 
 .service-portfolio h3 {
-  margin-bottom: 16px;
+  margin-bottom: 44px;
 }
 
 .service-portfolio__gallery {
-  overflow: hidden;
-  position: absolute;
+  overflow: hidden; 
+  position: relative;
+  /* position: absolute;
   left: calc(50% - 960px);
   bottom: 0;
-  width: 1920px;
+  width: 1920px; */
 }
 
 .service-portfolio__gallery-item {
-  float: left;
+  float: left; 
   position: relative;
-  display: table;
+  /* display: table; */
+  /* display: inline-block;
+  vertical-align: top; */
   width: 320px;
   height: 320px;
 }
@@ -837,8 +844,6 @@ button[disabled="disabled"] {
   font-size: 18px;
 }
 
-
-
 /* Service program */
 
 .service-program {
@@ -915,6 +920,11 @@ button[disabled="disabled"] {
 .service-program button {
   background-color: #ed1c24;
   margin-bottom: 63px;
+}
+
+.service-program .service-order__contacts {
+  position: relative;
+  top: -42px;
 }
 
 /* Service reviews */
@@ -1772,6 +1782,22 @@ button[disabled="disabled"] {
 
   .service-header__logo--open {
     margin-left: 413px;
+  }
+
+}
+
+@media screen and (max-width: 1919px) {
+
+  .container--portfolio {
+    width: 1600px;
+  }
+
+}
+
+@media screen and (max-width: 1599px) {
+
+  .container--portfolio {
+    width: 1280px;
   }
 
 }
