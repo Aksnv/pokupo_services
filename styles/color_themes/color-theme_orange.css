@@ -23,6 +23,10 @@
   background-image: url("../images/maths/bg.png");
 } */
 
+.service-name {
+  background-color: #5e5415;
+}
+
 .service-name button {
   background-color: #ffb900;
 }
@@ -69,6 +73,7 @@
 }
 
 .service-feedback {
+  background-color: #ff7338;
   background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);
 }
 

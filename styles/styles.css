@@ -631,6 +631,10 @@ button[disabled="disabled"] {
   padding-bottom: 13px; 
 }
 
+.service-description--company {
+  padding-bottom: 0;
+}
+
 .service-description h3 {
   margin-bottom: 17px;
 }
@@ -639,12 +643,21 @@ button[disabled="disabled"] {
   margin-bottom: 29px;
 }
 
+.service-description--company p {
+  margin-bottom: 48px;
+}
+
 .service-description li {
   display: inline-block;
   vertical-align: top;
   width: 170px;
   margin-right: 126px;
   margin-bottom: 20px;
+}
+
+.service-description--company li {
+  width: 200px;
+  margin-right: 95px;
 }
 
 .service-description li:nth-child(4n+4),
@@ -659,6 +672,10 @@ button[disabled="disabled"] {
   height: 135px;
 }
 
+.service-description--company .service-description__image {
+  width: 200px;
+}
+
 .service-description__image img {
   display: block;
   width: auto;
@@ -671,6 +688,11 @@ button[disabled="disabled"] {
   font-size: 15px;
   line-height: 20px;
   padding-top: 34px;
+}
+
+.service-description--company .service-description__text {
+  font-family: 'museo_sans_cyrl900';
+  font-size: 18px;
 }
 
 /* Service program */

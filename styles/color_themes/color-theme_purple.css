@@ -23,6 +23,10 @@
   background-image: url("../images/english/bg.png");
 } */
 
+.service-name {
+  background-color: #63416c;
+}
+
 .service-name button {
   background-color: #ed1c24;
 }
@@ -34,7 +38,7 @@
 }
 
 .service-description {
-  background-color: #ccc;
+  background-color: #00a3c6;
   background-image: linear-gradient(to right, #174567 0%, #00a3c6 100%);
   color: #fff;
 }
@@ -69,6 +73,7 @@
 }
 
 .service-feedback {
+  background-color: #623657;
   background-image: linear-gradient(to right, #39062a 0%, #623657 100%);
 }
 
