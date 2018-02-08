@@ -1047,6 +1047,10 @@ button[disabled="disabled"] {
   padding-bottom: 109px;
 }
 
+.service-order--company {
+  padding-bottom: 54px;
+}
+
 .service-order h2 {
   margin-bottom: 51px;
 }
@@ -1057,6 +1061,11 @@ button[disabled="disabled"] {
   margin: 0 auto;
   margin-bottom: 53px;
   border-spacing: 25px 0;
+}
+
+.service-order--company ul {
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 .service-order__item {
@@ -1072,6 +1081,11 @@ button[disabled="disabled"] {
   border-radius: 8px;
 }
 
+.service-order--company .service-order__item {
+  padding-top: 29px;
+  padding-bottom: 88px;
+}
+
 .service-order__item--active {
   padding-top: 62px;
   padding-bottom: 19px;
@@ -1084,11 +1098,21 @@ button[disabled="disabled"] {
   margin-bottom: 24px;
 }
 
+.service-order--company .service-order__item h4 {
+  margin-bottom: 29px;
+}
+
 .service-order__item h4 > span {
   font-family: 'museo_sans_cyrl500';
   font-size: 14px;
   line-height: 14px;
   padding-top: 5px;
+}
+
+.service-order--company .service-order__item h4 > span {
+  font-family: 'museo_sans_cyrl300';
+  line-height: 24px;
+  padding-top: 26px;
 }
 
 .service-order__price {
@@ -1098,6 +1122,10 @@ button[disabled="disabled"] {
   text-align: center;
   margin-bottom: 62px;
   color: #f9b500;
+}
+
+.service-order--company .service-order__price {
+  margin-bottom: 43px;
 }
 
 .service-order__item button {
@@ -1112,6 +1140,10 @@ button[disabled="disabled"] {
   border: 1px solid #aeb8bc;
   box-shadow: none;
   transition: all 0.5s ease-out;
+}
+
+.service-order--company .service-order__item button {
+  bottom: 40px;
 }
 
 .service-order__item button:hover {
