@@ -418,29 +418,53 @@ button[disabled="disabled"] {
   margin-top: 73px;
 }
 
-/* Service person */
+/* Service person & company */
 
-.service-person {
+.service-person,
+.service-company {
   overflow: hidden;
   min-height: 822px;
   padding-top: 59px;
   padding-bottom: 45px;
 }
 
-.service-person h2 {
+.service-company {
+  min-height: 560px;
+}
+
+.service-person h2,
+.service-company h2 {
   margin-bottom: 64px;
 }
 
-.service-person h3 {
+.service-company h2 {
+  margin-bottom: 43px;
+}
+
+.service-person h3,
+.service-company h3 {
+  line-height: 36px;
   text-align: left;
   margin-bottom: 26px;
 }
 
-.service-person h4 {
+.service-company h3 {
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.service-person h4,
+.service-company h4 {
   text-align: left;
 }
 
-.service-person p {
+.service-company h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-person p,
+.service-company p {
   margin-bottom: 26px;
 }
 
@@ -468,64 +492,100 @@ button[disabled="disabled"] {
   border-radius: 50%;
 }
 
-.service-person__about {
+.service-person__about,
+.service-company__about {
+  font-family: 'museo_sans_cyrl300';
   width: 580px;
   padding-top: 70px;
   margin-bottom: 29px;
 }
 
-.service-person__about {
-  font-family: 'museo_sans_cyrl300';
+.service-company__about {
+  width: 100%;
+  padding-top: 0;
 }
 
-.service-person__about ul {
+.service-person__about ul,
+.service-company__about ul {
   list-style-type: disc;
   margin-bottom: 24px;
   padding-left: 18px;
 }
 
-.service-person__social {
+.service-company__about ul {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.service-company__about li > span {
+  position: relative;
+}
+
+.service-company__about li > span:before {
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.service-person__social,
+.service-company__social {
   padding-top: 29px;
 }
 
-.service-person__social ul {
+.service-person__social ul,
+.service-company__social ul {
   padding-left: 0;
 }
 
-.service-person__social li {
+.service-person__social li,
+.service-company__social li {
   display: inline-block;
   vertical-align: top;
   margin-right: 4px;
 }
 
-.service-person__social-item {
+.service-person__social-item,
+.service-company__social-item {
   display: block;
   width: 32px;
   height: 32px;
   font-size: 0;
 }
 
-.service-person__social-item--fb {
+.service-person__social-item--fb,
+.service-company__social-item--fb {
   background-image: url("../images/icons/fb.png");
 }
 
-.service-person__social-item--vk {
+.service-person__social-item--vk,
+.service-company__social-item--vk {
   background-image: url("../images/icons/vk.png");
 }
 
-.service-person__social-item--ig {
+.service-person__social-item--ig,
+.service-company__social-item--ig {
   background-image: url("../images/icons/ig.png");
 }
 
-.service-person__social-item--yt {
+.service-person__social-item--yt,
+.service-company__social-item--yt {
   background-image: url("../images/icons/yt.png");
 }
 
-.service-person__social-item--gp {
+.service-person__social-item--gp,
+.service-company__social-item--gp {
   background-image: url("../images/icons/gp.png");
 }
 
-.service-person__social-item--tg {
+.service-person__social-item--tg,
+.service-company__social-item--tg {
   background-image: url("../images/icons/tg.png");
 }
 
