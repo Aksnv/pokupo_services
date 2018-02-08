@@ -43,6 +43,10 @@
   color: #fff;
 }
 
+.service-portfolio__gallery-item:hover::before {
+  background-color: #63416c;
+}
+
 .service-program button.navigation-button {
   background-color: #ed1c24;
 }

@@ -695,6 +695,150 @@ button[disabled="disabled"] {
   font-size: 18px;
 }
 
+/* Service portfolio */
+
+.service-portfolio {
+  overflow: hidden;
+  position: relative;
+  min-height: 760px;
+  padding-top: 46px;
+}
+
+.service-portfolio h3 {
+  margin-bottom: 16px;
+}
+
+.service-portfolio__gallery {
+  overflow: hidden;
+  position: absolute;
+  left: calc(50% - 960px);
+  bottom: 0;
+  width: 1920px;
+}
+
+.service-portfolio__gallery-item {
+  float: left;
+  position: relative;
+  display: table;
+  width: 320px;
+  height: 320px;
+}
+
+.service-portfolio__gallery-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-out; 
+}
+
+.service-portfolio__gallery-item:hover::before {
+  opacity: 0.9;
+}
+
+.service-portfolio__gallery-item--big {
+  width: 640px;
+  height: 640px;
+}
+
+.service-portfolio__gallery-item a {
+  display: block;
+}
+
+.service-portfolio__gallery-item img {
+  display: block;
+  width: 320px;
+  height: 320px;
+}
+
+.service-portfolio__gallery-item--big img {
+  width: 640px;
+  height: 640px;
+}
+
+.service-portfolio__gallery-description {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  top: 0; 
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  /* width: 320px;
+  height: 320px;  */
+  max-height: 285px;
+  text-align: center;
+  padding: 0 20px;
+  padding-top: 185px; 
+  /* padding-bottom: 63px; */
+  color: #fff;
+  pointer-events: none;
+  opacity: 0;
+  /* transition: all 1s ease-out;  */
+}
+
+.service-portfolio__gallery-description--big {
+  /* width: 640px;
+  height: 640px; */
+  max-height: 550px;
+  padding: 0 68px;
+  padding-top: 377px; 
+  /* padding-bottom: 165px; */
+}
+
+.service-portfolio__gallery-item:hover .service-portfolio__gallery-description {
+  display: block;
+  opacity: 1;
+}
+
+.service-portfolio__gallery-description h4 {
+  position: relative;
+  font-family: 'museo_sans_cyrl900';
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.service-portfolio__gallery-description h4::before {
+  position: absolute;
+  top: -41px;
+  left: calc(50% - 20px);
+  content: "";
+  display: block;
+  width: 40px;
+  height: 25px;
+  background-image: url("../images/webstudio/eye_small.png");
+}
+
+.service-portfolio__gallery-description--big h4::before {
+  top: -82px;
+  left: calc(50% - 40px);
+  content: "";
+  display: block;
+  width: 80px;
+  height: 50px;
+  background-image: url("../images/webstudio/eye_big.png");
+}
+
+.service-portfolio__gallery-description p {
+  /* overflow: hidden;
+  max-height: 75px; */
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.service-portfolio__gallery-description--big p {
+  /* max-height: 145px; */
+  font-size: 18px;
+}
+
+
+
 /* Service program */
 
 .service-program {
