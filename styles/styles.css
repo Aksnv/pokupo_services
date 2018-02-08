@@ -946,6 +946,10 @@ button[disabled="disabled"] {
   border-spacing: 24px 0;
 }
 
+.service-reviews__block--with-photo {
+  width: 1088px;
+}
+
 .service-reviews__block--active {
   display: table;
 }
@@ -960,6 +964,28 @@ button[disabled="disabled"] {
   padding-bottom: 57px;
   background-color: white;
   border-radius: 8px;
+}
+
+.service-reviews__item--with-photo {
+  padding: 30px 25px;
+  padding-right: 85px;
+  padding-bottom: 39px;
+}
+
+.service-reviews__photo {
+  float: left;
+}
+
+.service-reviews__photo img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.service-reviews__item--with-photo article {
+  margin-left: 115px;
+  padding-top: 10px;
 }
 
 .service-reviews__item header {
