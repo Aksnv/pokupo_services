@@ -1943,6 +1943,28 @@ button[disabled="disabled"] {
     margin-left: 27px;
   }
 
+  .service-header__menu-button--close {
+    position: absolute;
+    top: 0;
+    left: 924px;
+    z-index: 3;
+  }
+
+  .service-header__menu--open {
+    width: 100%; 
+    height: 1024px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .service-header__menu li {
+    margin-bottom: 46px;
+  }
+
+  .service-header__menu-item {
+    font-size: 20px;
+  }
+
   .service-header__logo {
     margin-left: 30px;
   }
