@@ -1893,8 +1893,6 @@ button[disabled="disabled"] {
 }
 
 
-
-
 @media screen and (max-width: 1915px) {
 
   .service-header__logo--open {
@@ -1915,6 +1913,42 @@ button[disabled="disabled"] {
 
   .container--portfolio {
     width: 1280px;
+  }
+
+}
+
+@media screen and (max-width: 1243px) {
+
+  .container {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  /* Service header */
+
+  .service-header__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .container--header {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .service-header__menu-button {
+    position: static;
+    float: left;
+    margin-top: 57px;
+    margin-left: 27px;
+  }
+
+  .service-header__logo {
+    margin-left: 30px;
+  }
+
+  .service-header__contacts {
+    margin-right: 0;
   }
 
 }
