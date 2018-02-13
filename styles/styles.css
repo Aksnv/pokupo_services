@@ -1951,4 +1951,26 @@ button[disabled="disabled"] {
     margin-right: 0;
   }
 
+  /* Service name */
+
+  .service-name {
+    padding-bottom: 95px;
+  }
+
+  .service-name h1 {
+    margin-bottom: 38px;
+  }
+
+  .service-name h1 > span {
+    padding-top: 30px;
+  }
+
+  .service-name p.service-name__price {
+    margin-bottom: 58px;
+  }
+
+  .service-name button {
+    margin-top: 58px;
+  }
+
 }
