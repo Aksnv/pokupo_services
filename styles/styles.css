@@ -2104,4 +2104,19 @@ button[disabled="disabled"] {
     margin-bottom: 57px;
   }
 
+  /* Service reviews */
+
+  .service-reviews__block {
+    width: 708px;
+  }
+
+  .service-reviews__item {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .service-reviews__block--active > .service-reviews__item:last-child {
+    display: none;
+  }
+
 }
