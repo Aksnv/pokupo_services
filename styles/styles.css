@@ -2069,4 +2069,28 @@ button[disabled="disabled"] {
     padding-bottom: 40px;
   }
 
+  /* Service description */
+
+  .service-description {
+    padding-bottom: 32px;
+  }
+
+  .service-description li {
+    margin-right: 4px;
+  }
+
+  .service-description__image {
+    height: 117px;
+    padding-top: 20px;
+  }
+
+  .service-description__image img {
+    width: 65px;
+    max-height: 117px;
+  }
+
+  .service-description__text {
+    padding-top: 10px;
+  }
+
 }
