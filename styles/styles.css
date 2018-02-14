@@ -507,22 +507,25 @@ button[disabled="disabled"] {
 
 .service-person__about ul,
 .service-company__about ul {
-  list-style-type: disc;
+  /* list-style-type: disc; */
+  list-style-type: none;
   margin-bottom: 24px;
   padding-left: 18px;
 }
 
 .service-company__about ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   text-align: center;
   margin-bottom: 16px;
 }
 
+.service-person__about li > span,
 .service-company__about li > span {
   position: relative;
 }
 
-.service-company__about li > span:before {
+.service-person__about li > span::before,
+.service-company__about li > span::before {
   position: absolute;
   top: 9px;
   left: -12px;
@@ -530,8 +533,12 @@ button[disabled="disabled"] {
   display: block;
   width: 5px;
   height: 5px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 50%;
+}
+
+.service-company__about li > span::before {
+  background-color: #000;
 }
 
 .service-person__social,
@@ -1994,5 +2001,68 @@ button[disabled="disabled"] {
   .service-name button {
     margin-top: 58px;
   }
+
+  /* Service person */
+
+  .service-person, 
+  .service-company {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .service-person__photo, 
+  .service-person__about {
+    float: none;
+  }
+
+  .service-person__photo {
+    width: 264px;
+    margin: 0 auto;
+  }
+
+  .service-person__photo img {
+    max-width: 264px;
+    max-height: 264px;
+  }
+
+  .service-person__about, 
+  .service-company__about {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .service-person__about ul, 
+  .service-company__about ul {
+    padding-left: 0;
+  }
+
+  .service-person h2, 
+  .service-company h2 {
+    margin-bottom: 30px;
+    /* padding-top: 35px; */
+  }
+
+  .service-person h3, 
+  .service-company h3 {
+    margin-bottom: 23px;
+  }
+
+  .service-person h3, 
+  .service-company h3,
+  .service-person h4, 
+  .service-company h4 {
+    text-align: center;
+  }
+
+  .service-person__social, 
+  .service-company__social {
+    padding-top: 0;
+  }
+  
+
 
 }
