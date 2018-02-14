@@ -2093,4 +2093,15 @@ button[disabled="disabled"] {
     padding-top: 10px;
   }
 
+  /* Service program */
+
+  .service-program__item ul, 
+  .service-program__item p {
+    margin-bottom: 25px;
+  }
+
+  .service-program p.service-program__price {
+    margin-bottom: 57px;
+  }
+
 }
