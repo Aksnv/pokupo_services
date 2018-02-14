@@ -2062,7 +2062,11 @@ button[disabled="disabled"] {
   .service-company__social {
     padding-top: 0;
   }
-  
 
+  /* Service achievements */
+  
+  .service-achievements {
+    padding-bottom: 40px;
+  }
 
 }
