@@ -2153,4 +2153,10 @@ button[disabled="disabled"] {
     margin-right: 0;
   }
 
+  /* Service footer */
+
+  .service-footer__block:nth-child(2) {
+    margin-right: 100px;
+  }
+
 }
