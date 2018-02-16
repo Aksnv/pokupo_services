@@ -2150,6 +2150,57 @@ button[disabled="disabled"] {
     line-height: 18px;
   }
 
+  /* Service portfolio */
+
+  .service-portfolio h3 {
+    margin-bottom: 24px;
+  }
+
+  .service-portfolio__gallery {
+    text-align: center;
+  }
+
+  .service-portfolio__gallery-item {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    /* margin-right: 10px;
+    margin-bottom: 10px; */
+  }
+
+  .service-portfolio__gallery-item--9 {
+    display: none;
+  }
+
+  /* .service-portfolio__gallery-item:nth-child(2n+2) {
+    margin-right: 0;
+  } */
+
+  .service-portfolio__gallery-item--big,
+  .service-portfolio__gallery-item--big img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .service-portfolio__gallery-description--big h4::before {
+    top: -41px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 25px;
+    background-image: url(../images/webstudio/eye_small.png);
+  }
+
+  .service-portfolio__gallery-description--big {
+    max-height: 285px;
+    padding: 0 20px;
+    padding-top: 185px;
+  }
+
+  .service-portfolio__gallery-description--big p {
+    font-size: 14px;
+  }
+
   /* Service program */
 
   .service-program__item ul, 
