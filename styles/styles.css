@@ -1101,8 +1101,13 @@ button[disabled="disabled"] {
 .service-order__item--active {
   padding-top: 62px;
   padding-bottom: 19px;
-  padding-left: 19px;
-  padding-right: 19px;
+  /* padding-left: 19px;
+  padding-right: 19px; */
+}
+
+.service-order--company .service-order__item--active {
+  padding-top: 28px;
+  padding-bottom: 87px;
 }
 
 .service-order__item h4 {
@@ -2225,6 +2230,11 @@ button[disabled="disabled"] {
   .service-reviews__item {
     display: block;
     margin: 0 auto;
+  }
+
+  .service-reviews__item--with-photo {
+    width: 509px;
+    padding-bottom: 78px;
   }
 
   .service-reviews__block--active > .service-reviews__item:last-child {
