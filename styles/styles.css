@@ -935,6 +935,10 @@ button[disabled="disabled"] {
   top: -42px;
 }
 
+.service-program--company .navigation-button {
+  top: 24%;
+}
+
 /* Service reviews */
 
 .service-reviews {
