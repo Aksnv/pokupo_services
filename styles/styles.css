@@ -364,6 +364,11 @@ button[disabled="disabled"] {
   font-size: 30px;
 }
 
+.service-header__contacts p:first-child > a {
+  text-decoration: none;
+  color: #000;
+}
+
 .service-header__contacts p:last-child {
   text-align: right;
 }
@@ -2009,6 +2014,10 @@ button[disabled="disabled"] {
     padding-top: 30px;
   }
 
+  .service-name p span.br {
+    display: inline;
+  }
+
   .service-name p.service-name__price {
     margin-bottom: 58px;
   }
@@ -2393,6 +2402,65 @@ button[disabled="disabled"] {
 
   .page-popup img {
     max-width: 708px;
+  }
+
+}
+
+@media screen and (max-width: 771px) {
+
+  .container {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  /* Service header */
+
+  .service-header {
+    min-height: 70px;
+  }
+
+  .service-header__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .container--header {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .service-header__menu-button {
+    margin-top: 27px;
+    margin-left: 20px;
+  }
+
+  .service-header__logo {
+    width: 129px;
+    height: 33px;
+    margin-top: 20px;
+    margin-left: 56px;
+    margin-right: 0;
+  }
+
+  .service-header__logo img {
+    max-width: 129px;
+    max-height: 33px;
+  }
+
+  .service-header__contacts {
+    margin-top: 24px;
+  }
+
+  .service-header__contacts-phone {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icons/phone.png");
+    font-size: 0;
+  }
+
+  .service-header__contacts p:last-child {
+    display: none;
   }
 
 }
