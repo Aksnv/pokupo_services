@@ -2016,6 +2016,39 @@ button[disabled="disabled"] {
     padding-bottom: 24px;
   }
 
+  .service-company {
+    padding-top: 60px;
+  }
+
+  .service-person h2, 
+  .service-company h2 {
+    margin-bottom: 30px;
+    /* padding-top: 35px; */
+  }
+
+  .service-person h3, 
+  .service-company h3 {
+    margin-bottom: 23px;
+  }
+
+  .service-person h3 span.br, 
+  .service-company h3 span.br {
+    display: inline;
+  }
+
+  .service-person h3, 
+  .service-company h3,
+  .service-person h4, 
+  .service-company h4 {
+    text-align: center;
+  }
+
+  .service-company h3 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 51px;
+  }
+
   .service-person__photo, 
   .service-person__about {
     float: none;
@@ -2038,31 +2071,31 @@ button[disabled="disabled"] {
     margin-bottom: 0;
     padding-top: 35px;
     padding-left: 65px;
-    padding-right: 65px;
+    padding-right: 65px; 
+  }
+
+  .service-company__about {
+    padding-top: 14px;
   }
 
   .service-person__about ul, 
   .service-company__about ul {
+    /* width: 578px;
+    margin: 0 auto;
+    margin-bottom: 16px; */
     padding-left: 0;
   }
 
-  .service-person h2, 
-  .service-company h2 {
-    margin-bottom: 30px;
-    /* padding-top: 35px; */
+  .service-company__about ul {
+    margin-bottom: 44px;
   }
 
-  .service-person h3, 
-  .service-company h3 {
-    margin-bottom: 23px;
-  }
-
-  .service-person h3, 
-  .service-company h3,
-  .service-person h4, 
-  .service-company h4 {
-    text-align: center;
-  }
+  /* .service-person p, 
+  .service-company p {
+    width: 578px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  } */
 
   .service-person__social, 
   .service-company__social {
@@ -2250,6 +2283,12 @@ button[disabled="disabled"] {
   .service-popup {
     left: calc(50% - 354px);
     width: 708px;
+  }
+
+  /* Page popup */
+
+  .page-popup img {
+    max-width: 708px;
   }
 
 }
