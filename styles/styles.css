@@ -2359,8 +2359,21 @@ button[disabled="disabled"] {
     margin-right: 65px;
   }
 
+  /* .service-team--company .service-team__item {
+    margin-right: 65px;
+  } */
+
   .service-team__item:nth-child(2n+2) {
     margin-right: 0;
+  }
+
+  /* .service-team--company .service-team__item:nth-child(3n+3) {
+    margin-right: 0;
+  } */
+
+  .service-team--company button {
+    position: relative;
+    top: -50px;
   }
 
   /* Service footer */
