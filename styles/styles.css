@@ -2247,8 +2247,16 @@ button[disabled="disabled"] {
     padding-bottom: 89px;
   }
 
+  .service-order--company {
+    padding-bottom: 33px;
+  }
+
   .service-order ul {
     width: 310px;
+  }
+
+  .service-order--company ul {
+    width: 409px;
   }
 
   .service-order__item {
