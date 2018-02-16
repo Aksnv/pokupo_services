@@ -9,23 +9,25 @@
 </head>
 <body>
   <header class="service-header">
-    <button class="service-header__menu-button"></button>
-    <nav class="service-header__menu">
-      <ul>
-        <li><a href="#" class="service-header__menu-item service-header__menu-item--1 service-header__menu-item--active">Главная</a></li>
-        <li><a href="#" class="service-header__menu-item service-header__menu-item--2">О преподавателе</a></li>
-        <li><a href="#" class="service-header__menu-item service-header__menu-item--3">Программа</a></li>
-        <li><a href="#" class="service-header__menu-item service-header__menu-item--4">Отзывы</a></li>
-        <li><a href="#" class="service-header__menu-item service-header__menu-item--5">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="container container--header">
-      <div class="service-header__logo">
-        <a href="#"><img src="../images/english/logo.png" alt="Услуги репетитора по английскому языку"></a>
-      </div>
-      <div class="service-header__contacts">
-        <p><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></p>
-        <p><a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
+    <div class="service-header__wrapper">
+      <button class="service-header__menu-button"></button>
+      <nav class="service-header__menu">
+        <ul>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--1 service-header__menu-item--active">Главная</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--2">О преподавателе</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--3">Программа</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--4">Отзывы</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--5">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="container container--header">
+        <div class="service-header__logo">
+          <a href="#"><img src="../images/english/logo.png" alt="Услуги репетитора по английскому языку"></a>
+        </div>
+        <div class="service-header__contacts">
+          <p><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></p>
+          <p><a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
+        </div>
       </div>
     </div>
   </header>
@@ -238,23 +240,25 @@
     <div class="container">
       <h2>Заказать услугу</h2>
       <ul>
-        <li class="service-order__item">
+        <li class="service-order__item service-order__item--1 service-order__item--visible">
           <h4>Одно занятие<span class="br"></span></h4>
           <p class="service-order__price"><strong>500 руб</strong></p>
           <button class="button">Выбрать</button>
         </li>
-        <li class="service-order__item">
+        <li class="service-order__item service-order__item--2">
           <h4>Неделя занятий<span class="br">3 урока</span></h4>
           <p class="service-order__price"><strong>1500 руб</strong></p>
           <button class="button">Выбрать</button>
         </li>
-        <li class="service-order__item">
+        <li class="service-order__item service-order__item--3">
           <h4>Месяц занятий<span class="br">12 уроков</span></h4>
           <p class="service-order__price"><strong>6000 руб</strong></p>
           <button class="button">Выбрать</button>
         </li>
       </ul>
       <p class="service-order__contacts">Узнайте больше о процессе обучения <span class="br">8 123 456-78-90</span></p>
+      <button class="navigation-button navigation-button--back order-button--back" disabled="disabled">Назад</button>
+      <button class="navigation-button navigation-button--forward order-button--forward">Вперед</button>
     </div>
   </section>
 
