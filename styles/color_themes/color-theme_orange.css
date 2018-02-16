@@ -114,3 +114,25 @@
 .back-to-top--visible:hover::before {
   background-color: #f9b500;
 }
+
+@media screen and (max-width: 1243px) {
+
+  /* Service header */
+
+  .service-header__menu {
+    background-color: #e8e6d9;
+  }
+
+  .service-header__menu-item {
+    color: #000;
+  }
+
+  .service-header__menu-item::after {
+    background-color: #f4c23d;
+  }
+
+  .service-header__menu-button--close {
+    background-image: url("../../images/icons/menu_close.png");
+  }
+
+}
