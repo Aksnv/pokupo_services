@@ -2245,4 +2245,11 @@ button[disabled="disabled"] {
     margin-right: 100px;
   }
 
+  /* Service popup */
+
+  .service-popup {
+    left: calc(50% - 354px);
+    width: 708px;
+  }
+
 }
