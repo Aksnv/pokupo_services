@@ -9,11 +9,11 @@ $(".service-header__menu-button").click(function() {
 
 /* Service order item hover */
 
-$(".service-order__item button").mouseover(function() {
+$(".service-order__item button.button").mouseover(function() {
   $(this).parent().addClass("service-order__item--active");
 });
 
-$(".service-order__item button").mouseout(function() {
+$(".service-order__item button.button").mouseout(function() {
   $(this).parent().removeClass("service-order__item--active");
 });
 
@@ -195,6 +195,37 @@ $(".reviews-button--back").click(function() {
     if ($($(".service-reviews__pagination-item")[j]).hasClass("service-reviews__pagination-item--active")) {
       $($(".service-reviews__pagination-item")[j]).removeClass("service-reviews__pagination-item--active");
       $($(".service-reviews__pagination-item")[j - 1]).addClass("service-reviews__pagination-item--active");
+      break;
+    }
+  }
+});
+
+
+/* Order carousel */
+
+$(".order-button--forward").click(function() {
+  $(".order-button--back").removeAttr("disabled");
+  for (var i = 0; i < $(".service-order__item").length; i++) {
+    if ($($(".service-order__item")[i]).hasClass("service-order__item--visible")) {
+      $($(".service-order__item")[i]).removeClass("service-order__item--visible");
+      $($(".service-order__item")[i + 1]).addClass("service-order__item--visible");
+      if (i == 1) {
+        $(".order-button--forward").attr("disabled", "disabled");
+      }
+      break;
+    }
+  }
+});
+
+$(".order-button--back").click(function() {
+  $(".order-button--forward").removeAttr("disabled");
+  for (var i = 0; i < $(".service-order__item").length; i++) {
+    if ($($(".service-order__item")[i]).hasClass("service-order__item--visible")) {
+      $($(".service-order__item")[i]).removeClass("service-order__item--visible");
+      $($(".service-order__item")[i - 1]).addClass("service-order__item--visible");
+      if (i == 1) {
+        $(".order-button--back").attr("disabled", "disabled");
+      }
       break;
     }
   }

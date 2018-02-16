@@ -76,6 +76,10 @@
   border: 2px solid #f9b500;
 }
 
+.service-order button.navigation-button {
+  background-color: #f9b500;
+}
+
 .service-feedback {
   background-color: #ff7338;
   background-image: linear-gradient(to top, #ffa008 0%, #ff7338 100%);

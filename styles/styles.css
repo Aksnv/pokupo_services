@@ -1175,6 +1175,10 @@ button[disabled="disabled"] {
   font-family: 'museo_sans_cyrl900';
 }
 
+.service-order .navigation-button {
+  display: none;
+}
+
 /* Service feedback */
 
 .service-feedback {
@@ -2123,8 +2127,12 @@ button[disabled="disabled"] {
 
   /* Service order */
 
+  .service-order {
+    padding-bottom: 89px;
+  }
+
   .service-order ul {
-    width: 258px;
+    width: 310px;
   }
 
   .service-order__item {
@@ -2133,6 +2141,23 @@ button[disabled="disabled"] {
 
   .service-order__item--visible {
     display: table-cell;
+  }
+
+  .service-order__item--active {
+    padding-bottom: 67px;
+  }
+
+  .service-order__item h4 {
+    margin-bottom: 32px;
+  }
+
+  .service-order__price {
+    margin-bottom: 68px;
+  }
+
+  .service-order .navigation-button {
+    top: 44%;
+    display: block;
   }
 
   /* Service team */
