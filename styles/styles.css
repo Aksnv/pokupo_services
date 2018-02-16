@@ -2114,6 +2114,10 @@ button[disabled="disabled"] {
     padding-bottom: 32px;
   }
 
+  .service-description--company {
+    padding-bottom: 7px;
+  }
+
   .service-description li {
     margin-right: 4px;
   }
@@ -2130,6 +2134,20 @@ button[disabled="disabled"] {
 
   .service-description__text {
     padding-top: 10px;
+  }
+
+  .service-description--company li {
+    width: 138px;
+    margin-right: 37px;
+  }
+
+  .service-description--company p {
+    margin-bottom: 43px;
+  }
+
+  .service-description--company .service-description__text {
+    font-size: 15px;
+    line-height: 18px;
   }
 
   /* Service program */
