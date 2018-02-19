@@ -2026,7 +2026,7 @@ button[disabled="disabled"] {
     margin-top: 58px;
   }
 
-  /* Service person */
+  /* Service person & company */
 
   .service-person, 
   .service-company {
@@ -2417,6 +2417,11 @@ button[disabled="disabled"] {
     min-width: 268px;
   }
 
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
   /* Service header */
 
   .service-header {
@@ -2494,6 +2499,30 @@ button[disabled="disabled"] {
 
   .service-name button {
     margin-top: 16px;
+  }
+
+  /* Service person & company */
+
+  .service-person, 
+  .service-company {
+    padding-top: 52px;
+    padding-bottom: 12px;
+  }
+
+  .service-person h2, 
+  .service-company h2 {
+    margin-bottom: 32px;
+  }
+
+  .service-person__about, 
+  .service-company__about {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service-person__social, 
+  .service-company__social {
+    padding-top: 8px;
   }
 
 }
