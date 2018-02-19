@@ -2413,6 +2413,10 @@ button[disabled="disabled"] {
     margin: 0 auto;
   }
 
+  .button {
+    min-width: 268px;
+  }
+
   /* Service header */
 
   .service-header {
@@ -2461,6 +2465,35 @@ button[disabled="disabled"] {
 
   .service-header__contacts p:last-child {
     display: none;
+  }
+
+  /* Service name */
+
+  .service-name {
+    min-height: 628px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .service-name h1 {
+    font-size: 40px;
+    margin-bottom: 18px;
+  }
+
+  .service-name h1 > span {
+    padding-top: 0;
+  }
+
+  .service-name p {
+    margin-bottom: 18px;
+  }
+
+  .service-name p.service-name__price {
+    margin-bottom: 16px;
+  }
+
+  .service-name button {
+    margin-top: 16px;
   }
 
 }
