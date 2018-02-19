@@ -2525,4 +2525,14 @@ button[disabled="disabled"] {
     padding-top: 8px;
   }
 
+  /* Service achievements */
+
+  .service-achievements {
+    padding-bottom: 6px;
+  }
+
+  .service-achievements h3 {
+    margin-bottom: 31px;
+  }
+
 }
