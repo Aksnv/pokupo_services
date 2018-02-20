@@ -2535,4 +2535,33 @@ button[disabled="disabled"] {
     margin-bottom: 31px;
   }
 
+  /* Service description */
+
+  .service-description {
+    padding-top: 36px;
+    padding-bottom: 48px;
+  }
+
+  .service-description li,
+  .service-description__image {
+    width: 130px;
+  }
+
+  .service-description li {
+    margin-bottom: 8px;
+  }
+
+  .service-description__image {
+    height: 112px;
+    padding-top: 0;
+  }
+
+  .service-description__text {
+    padding-top: 0;
+  }
+
+  .service-description ul p {
+    margin-bottom: 0;
+  }
+
 }
