@@ -1634,6 +1634,15 @@ button[disabled="disabled"] {
   background-color: #ccc;
 }
 
+.service-footer__subscribe-form label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-right: 66px;
+  color: white;
+}
+
 .subscribe-form__email {
   width: 220px;
   height: 42px;
@@ -2562,6 +2571,52 @@ button[disabled="disabled"] {
 
   .service-description ul p {
     margin-bottom: 0;
+  }
+
+  /* Service footer */
+
+  .service-footer {
+    padding-top: 16px;
+  }
+
+  .service-footer__block {
+    display: none;
+  }
+
+  .service-footer__block--right {
+    float: none;
+    display: block;
+  }
+
+  .service-footer__social ul,
+  .service-footer__subscribe-form {
+    text-align: center;
+  }
+
+  .service-footer__social ul {
+    margin-bottom: 30px;
+  }
+
+  .service-footer__subscribe-form::after {
+    top: 33px;
+    right: 71px;
+  }
+
+  .service-footer__subscribe-form label {
+    margin-bottom: 2px;
+  }
+
+  .subscribe-form__submit {
+    top: 28px;
+    right: 32px;
+  }
+
+  .service-footer__copyrights {
+    text-align: right;
+  }
+
+  .service-footer__copyrights::before {
+    left: -7px;
   }
 
 }
