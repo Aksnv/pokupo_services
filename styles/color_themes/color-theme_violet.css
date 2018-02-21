@@ -159,8 +159,8 @@
 
 @media screen and (max-width: 771px) {
 
-  .service-reviews__pagination-item {
-    background-color: #ed1c24;
+  .service-order__item {
+    border: 2px solid #ed1c24;
   }
 
   .service-order__item button {
