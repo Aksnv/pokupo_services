@@ -1470,25 +1470,30 @@ button[disabled="disabled"] {
   margin-bottom: 10px;
 }
 
-/* .service-team__pagination {
+.service-team__pagination,
+.service-order__pagination {
   display: none;
-} */
+} 
 
-.service-team__pagination ul {
+.service-team__pagination ul,
+.service-order__pagination ul {
   text-align: center;
 }
 
-.service-team__pagination li {
+.service-team__pagination li,
+.service-order__pagination li {
   display: inline-block;
   vertical-align: top;
   margin-right: 4px;
 }
 
-.service-team__pagination li:last-child {
+.service-team__pagination li:last-child,
+.service-order__pagination li:last-child {
   margin-right: 0;
 }
 
-.service-team__pagination-item {
+.service-team__pagination-item,
+.service-order__pagination-item {
   display: block;
   width: 8px;
   height: 8px;
@@ -1497,7 +1502,8 @@ button[disabled="disabled"] {
   cursor: pointer;
 }
 
-.service-team__pagination--dark .service-team__pagination-item {
+.service-team__pagination--dark .service-team__pagination-item,
+.service-order__pagination--dark .service-order__pagination-item {
   background-color: #c9c9c9;
 }
 
@@ -2622,6 +2628,55 @@ button[disabled="disabled"] {
     margin-bottom: 0;
   }
 
+  /* Service order */
+
+  .service-order {
+    padding-top: 33px;
+    padding-bottom: 13px;
+  }
+
+  .service-order h2 {
+    margin-bottom: 22px;
+  }
+
+  .service-order ul {
+    width: 280px;
+    border-spacing: 0;
+    margin-bottom: 39px;
+  }
+
+  .service-order__item {
+    width: 280px;
+    padding-top: 61px;
+  }
+
+  .service-order__item button {
+    color: #fff;
+    border: none;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .service-order__pagination {
+    display: block;
+  }
+
+  .service-order__pagination ul {
+    margin-bottom: 18px;
+  }
+
+  .service-order__pagination li {
+    margin-right: 8px;
+  }
+
+  .service-order__contacts {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .service-order .navigation-button {
+    display: none;
+  }
+
   /* Service feedback */
 
   .container--feedback {
@@ -2686,6 +2741,10 @@ button[disabled="disabled"] {
   }
 
   .service-team__item--1 {
+    display: block;
+  }
+
+  .service-team__pagination {
     display: block;
   }
 

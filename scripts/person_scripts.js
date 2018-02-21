@@ -10,11 +10,15 @@ $(".service-header__menu-button").click(function() {
 /* Service order item hover */
 
 $(".service-order__item button.button").mouseover(function() {
-  $(this).parent().addClass("service-order__item--active");
+  if ($(".container").css("width") != "280px") {
+    $(this).parent().addClass("service-order__item--active");
+  }
 });
 
 $(".service-order__item button.button").mouseout(function() {
-  $(this).parent().removeClass("service-order__item--active");
+  if ($(".container").css("width") != "280px") {
+    $(this).parent().removeClass("service-order__item--active");
+  }
 });
 
 
@@ -229,6 +233,17 @@ $(".order-button--back").click(function() {
       break;
     }
   }
+});
+
+
+/* Order pagination */
+
+$(".service-order__pagination-item").click(function() {
+  $(".service-order__pagination-item").removeClass("service-order__pagination-item--active");
+  $(".service-order__item").hide();
+  $(this).addClass("service-order__pagination-item--active");
+  var num = $(this).attr("class").charAt(63);
+  $(".service-order__item--" + num).show();
 });
 
 

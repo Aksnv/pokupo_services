@@ -90,7 +90,8 @@
   background-color: #ed1c24;
 }
 
-.service-team__pagination--dark .service-team__pagination-item--active {
+.service-team__pagination--dark .service-team__pagination-item--active,
+.service-order__pagination--dark .service-order__pagination-item--active {
   background-color: #ed1c24;
 }
 
@@ -140,6 +141,18 @@
 
   .service-header__menu-button--close {
     background-image: url("../../images/icons/menu_close_white.png");
+  }
+
+}
+
+@media screen and (max-width: 771px) {
+
+  .service-reviews__pagination-item {
+    background-color: #ed1c24;
+  }
+
+  .service-order__item button {
+    background-color: #ed1c24;
   }
 
 }
