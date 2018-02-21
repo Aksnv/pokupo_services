@@ -89,6 +89,10 @@
   background-color: #ed1c24;
 }
 
+.service-team__pagination--dark .service-team__pagination-item--active {
+  background-color: #ed1c24;
+}
+
 .service-map__header {
   background-color: #edebe2;
   color: #000;

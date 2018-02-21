@@ -1470,6 +1470,37 @@ button[disabled="disabled"] {
   margin-bottom: 10px;
 }
 
+/* .service-team__pagination {
+  display: none;
+} */
+
+.service-team__pagination ul {
+  text-align: center;
+}
+
+.service-team__pagination li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.service-team__pagination li:last-child {
+  margin-right: 0;
+}
+
+.service-team__pagination-item {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.service-team__pagination--dark .service-team__pagination-item {
+  background-color: #c9c9c9;
+}
+
 /* Service map */
 
 .service-map {
@@ -1623,6 +1654,17 @@ button[disabled="disabled"] {
   margin-bottom: 27px;
 }
 
+.service-footer__subscribe-form::before {
+  position: absolute;
+  top: -28px;
+  left: 28px;
+  content: "Оформить подписку";
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
 .service-footer__subscribe-form::after {
   position: absolute;
   top: 6px;
@@ -1634,14 +1676,14 @@ button[disabled="disabled"] {
   background-color: #ccc;
 }
 
-.service-footer__subscribe-form label {
+/* .service-footer__subscribe-form label {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
   text-transform: uppercase;
   padding-right: 66px;
   color: white;
-}
+} */
 
 .subscribe-form__email {
   width: 220px;
@@ -2573,6 +2615,28 @@ button[disabled="disabled"] {
     margin-bottom: 0;
   }
 
+  /* Service team */
+
+  .service-team {
+    padding-top: 32px;
+    padding-bottom: 27px;
+  }
+
+  .service-team h2 {
+    margin-bottom: 31px;
+  }
+
+  .service-team__item {
+    display: none;
+    width: 280px;
+    margin-right: 0;
+    margin-bottom: 33px;
+  }
+
+  .service-team__item--1 {
+    display: block;
+  }
+
   /* Service footer */
 
   .service-footer {
@@ -2594,22 +2658,24 @@ button[disabled="disabled"] {
   }
 
   .service-footer__social ul {
-    margin-bottom: 30px;
+    margin-bottom: 57px;
+  }
+
+  .service-footer__subscribe-form::before {
+    left: 30px;
   }
 
   .service-footer__subscribe-form::after {
-    top: 33px;
     right: 71px;
-  }
+  } 
 
-  .service-footer__subscribe-form label {
+  /* .service-footer__subscribe-form label {
     margin-bottom: 2px;
-  }
+  } */
 
   .subscribe-form__submit {
-    top: 28px;
     right: 32px;
-  }
+  } 
 
   .service-footer__copyrights {
     text-align: right;
