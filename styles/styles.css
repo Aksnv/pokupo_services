@@ -2580,17 +2580,22 @@ button[disabled="disabled"] {
 
   .service-name {
     min-height: 628px;
-    padding-top: 50px;
+    padding-top: 58px;
     padding-bottom: 70px;
+  }
+
+  .service-name--company {
+    min-height: 552px;
   }
 
   .service-name h1 {
     font-size: 40px;
+    line-height: 46px;
     margin-bottom: 18px;
   }
 
   .service-name h1 > span {
-    padding-top: 0;
+    padding-top: 4px;
   }
 
   .service-name p {
