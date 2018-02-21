@@ -2889,6 +2889,10 @@ button[disabled="disabled"] {
     padding-bottom: 27px;
   }
 
+  .service-team--company {
+    padding-bottom: 0;
+  }
+
   .service-team h2 {
     margin-bottom: 31px;
   }
@@ -2900,12 +2904,20 @@ button[disabled="disabled"] {
     margin-bottom: 33px;
   }
 
+  .service-team--company .service-team__item {
+    margin-bottom: 24px;
+  }
+
   .service-team__item--1 {
     display: block;
   }
 
   .service-team__pagination {
     display: block;
+  }
+
+  .service-team--company button {
+    top: -36px;
   }
 
   /* Service map */

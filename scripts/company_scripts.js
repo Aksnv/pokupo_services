@@ -261,6 +261,17 @@ $(".order-button--back").click(function() {
 });
 
 
+/* Team pagination */
+
+$(".service-team__pagination-item").click(function() {
+  $(".service-team__pagination-item").removeClass("service-team__pagination-item--active");
+  $(".service-team__item").hide();
+  $(this).addClass("service-team__pagination-item--active");
+  var num = $(this).attr("class").charAt(61);
+  $(".service-team__item--" + num).show();
+});
+
+
 /* Back-to-top button */
 
 (function () {
