@@ -2618,15 +2618,38 @@ button[disabled="disabled"] {
     padding-bottom: 12px;
   }
 
+  .service-company {
+    padding-top: 33px;
+    padding-bottom: 3px;
+  }
+
   .service-person h2, 
   .service-company h2 {
     margin-bottom: 32px;
+  }
+
+  .service-company h2 {
+    margin-bottom: 6px;
+  }
+
+  .service-company h3 {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+
+  .service-person h3 span.br, 
+  .service-company h3 span.br {
+    display: block;
   }
 
   .service-person__about, 
   .service-company__about {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .service-company__about ul {
+    margin-bottom: 30px;
   }
 
   .service-person__social, 
