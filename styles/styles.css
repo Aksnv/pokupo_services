@@ -2443,6 +2443,12 @@ button[disabled="disabled"] {
     margin-right: 100px;
   }
 
+  /* Back-to-top button */
+
+  .back-to-top {
+    display: none;
+  }
+
   /* Service popup */
 
   .service-popup {
@@ -2614,6 +2620,51 @@ button[disabled="disabled"] {
 
   .service-description ul p {
     margin-bottom: 0;
+  }
+
+  /* Service feedback */
+
+  .container--feedback {
+    width: 320px;
+    padding-bottom: 20px;
+  }
+
+  .service-feedback__offer {
+    padding-bottom: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+  }
+
+  .service-feedback__offer > p {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .service-feedback__offer > p strong {
+    display: block;
+  }
+
+  .service-feedback__offer-counter {
+    padding-left: 5px;
+  }
+
+  .offer-counter__content {
+    position: static;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .service-feedback__form,
+  .service-feedback__form input {
+    width: 280px;
+  }
+
+  .service-feedback__form input[type="submit"] {
+    min-width: 280px;
   }
 
   /* Service team */
