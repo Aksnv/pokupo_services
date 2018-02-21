@@ -129,6 +129,19 @@ function countdownCounter() {
 setInterval(countdownCounter, 1000);
 
 
+/* Achievements pagination */
+
+$(".service-achievements__pagination-item").click(function() {
+  $(".service-achievements__pagination-item").removeClass("service-achievements__pagination-item--active");
+  $(".service-achievements__item").hide();
+  $(".service-achievements__item").removeClass("service-achievements__item--active");
+  $(this).addClass("service-achievements__pagination-item--active");
+  var num = $(this).attr("class").charAt(77);
+  $(".service-achievements__item--" + num).show();
+  $(".service-achievements__item--" + num).addClass("service-achievements__item--active");
+});
+
+
 /* Program carousel */
 
 $(".program-button--forward").click(function() {

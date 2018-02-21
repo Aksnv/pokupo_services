@@ -1476,19 +1476,22 @@ button[disabled="disabled"] {
 
 .service-team__pagination,
 .service-order__pagination,
-.service-program__pagination {
+.service-program__pagination,
+.service-achievements__pagination {
   display: none;
 } 
 
 .service-team__pagination ul,
 .service-order__pagination ul,
-.service-program__pagination ul {
+.service-program__pagination ul,
+.service-achievements__pagination ul {
   text-align: center;
 }
 
 .service-team__pagination li,
 .service-order__pagination li,
-.service-program__pagination li {
+.service-program__pagination li,
+.service-achievements__pagination li {
   display: inline-block;
   vertical-align: top;
   margin-right: 4px;
@@ -1496,13 +1499,15 @@ button[disabled="disabled"] {
 
 .service-team__pagination li:last-child,
 .service-order__pagination li:last-child,
-.service-program__pagination li:last-child {
+.service-program__pagination li:last-child,
+.service-achievements__pagination li:last-child {
   margin-right: 0;
 }
 
 .service-team__pagination-item,
 .service-order__pagination-item,
-.service-program__pagination-item {
+.service-program__pagination-item,
+.service-achievements__pagination-item {
   display: block;
   width: 8px;
   height: 8px;
@@ -2611,6 +2616,25 @@ button[disabled="disabled"] {
 
   .service-achievements h3 {
     margin-bottom: 31px;
+  }
+
+  .service-achievements li.service-achievements__item {
+    display: none;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .service-achievements li.service-achievements__item--1,
+  .service-achievements li.service-achievements__item--active {
+    display: block;
+  }
+
+  .service-achievements img {
+    margin: 0 auto;
+  }
+
+  .service-achievements__pagination {
+    display: block;
   }
 
   /* Service description */

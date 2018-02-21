@@ -37,6 +37,10 @@
   color: #000;
 }
 
+.service-achievements__pagination-item--active {
+  background-color: #ed1c24;
+}
+
 .service-description {
   background-color: #00a3c6;
   background-image: linear-gradient(to right, #174567 0%, #00a3c6 100%);

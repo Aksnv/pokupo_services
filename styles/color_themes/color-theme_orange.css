@@ -37,6 +37,10 @@
   color: #fff;
 }
 
+.service-achievements__pagination-item--active {
+  background-color: #f9b500;
+}
+
 .service-description {
   background-color: #f9b500;
   background-image: none;
