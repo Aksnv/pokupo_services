@@ -111,6 +111,10 @@
   background-color: #292b2c;
 }
 
+.service-footer__subscribe-form::before {
+  color: #fff;
+}
+
 .subscribe-form__submit {
   background-image: url("../../images/maths/button_subscribe.png");
 }

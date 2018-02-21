@@ -25,7 +25,7 @@
           <a href="#"><img src="../images/english/logo.png" alt="Услуги репетитора по английскому языку"></a>
         </div>
         <div class="service-header__contacts">
-          <p><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></p>
+          <p><a href="#"><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></a></p>
           <p><a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
         </div>
       </div>
@@ -75,11 +75,19 @@
     <div class="container">
       <h3>Дипломы и награды</h3>
       <ul>
-        <li><img src="../images/maths/certificate.png" alt="certificate"></li>
-        <li><img src="../images/maths/diploma_1.png" alt="diploma"></li>
-        <li><img src="../images/maths/certificate.png" alt="certificate"></li>
-        <li><img src="../images/maths/diploma_2.png" alt="diploma"></li>
+        <li class="service-achievements__item service-achievements__item--1 service-achievements__item--active"><img src="../images/maths/certificate.png" alt="certificate"></li>
+        <li class="service-achievements__item service-achievements__item--2"><img src="../images/maths/diploma_1.png" alt="diploma"></li>
+        <li class="service-achievements__item service-achievements__item--3"><img src="../images/maths/certificate.png" alt="certificate"></li>
+        <li class="service-achievements__item service-achievements__item--4"><img src="../images/maths/diploma_2.png" alt="diploma"></li>
       </ul>
+      <div class="service-achievements__pagination">
+        <ul>
+          <li class="service-achievements__pagination-item service-achievements__pagination-item--1 service-achievements__pagination-item--active"></li>
+          <li class="service-achievements__pagination-item service-achievements__pagination-item--2"></li>
+          <li class="service-achievements__pagination-item service-achievements__pagination-item--3"></li>
+          <li class="service-achievements__pagination-item service-achievements__pagination-item--4"></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -119,7 +127,7 @@
   <section class="service-program" id="service-program">
     <div class="container">
       <h2>Программы обучения</h2>
-      <div class="service-program__item service-program__item--active">
+      <div class="service-program__item service-program__item--1 service-program__item--active">
         <h3>Обучение детей дошкольного <span class="br">возраста</span></h3>
         <div class="service-program__item-image">
           <img src="../images/english/program_image_1.png" alt="program_image_1">
@@ -129,9 +137,9 @@
           <li><span>преподаватель математики в БГТУ им. Шухова, кафедра русского языка и естественных дисциплин (2011-2012 гг.);</span></li>
           <li><span>учитель математики в лицее (с 2011 г.).</span></li>
         </ul>
-        <p class="service-program__price"><strong>Стоимость &ndash; 375 руб. / 45 мин.</strong></p>
+        <p class="service-program__price"><strong>Стоимость &ndash; <span class="br">375 руб. / 45 мин.</span></strong></p>
       </div>
-      <div class="service-program__item">
+      <div class="service-program__item service-program__item--2">
         <h3>Обучение детей <span class="br">по школьной программе</span></h3>
         <div class="service-program__item-image">
           <img src="../images/english/program_image_2.png" alt="program_image_2">
@@ -141,9 +149,9 @@
           <li><span>преподаватель математики в БГТУ им. Шухова, кафедра русского языка и естественных дисциплин (2011-2012 гг.);</span></li>
           <li><span>учитель математики в лицее (с 2011 г.).</span></li>
         </ul>
-        <p class="service-program__price"><strong>Стоимость &ndash; 400 руб. / 45 мин.</strong></p>
+        <p class="service-program__price"><strong>Стоимость &ndash; <span class="br">400 руб. / 45 мин.</span></strong></p>
       </div>
-      <div class="service-program__item">
+      <div class="service-program__item service-program__item--3">
         <h3>Подготовка <span class="br">к ЕГЭ и институту</span></h3>
         <div class="service-program__item-image">
           <img src="../images/english/program_image_3.png" alt="program_image_3">
@@ -153,7 +161,14 @@
           <li><span>преподаватель математики в БГТУ им. Шухова, кафедра русского языка и естественных дисциплин (2011-2012 гг.);</span></li>
           <li><span>учитель математики в лицее (с 2011 г.).</span></li>
         </ul>
-        <p class="service-program__price"><strong>Стоимость &ndash; 500 руб. / 45 мин.</strong></p>
+        <p class="service-program__price"><strong>Стоимость &ndash; <span class="br">500 руб. / 45 мин.</span></strong></p>
+      </div>
+      <div class="service-program__pagination service-program__pagination--dark">
+        <ul>
+          <li class="service-program__pagination-item service-program__pagination-item--1 service-program__pagination-item--active"></li>
+          <li class="service-program__pagination-item service-program__pagination-item--2"></li>
+          <li class="service-program__pagination-item service-program__pagination-item--3"></li>
+        </ul>
       </div>
       <button class="button button--popup">Оставить заявку</button>
       <button class="navigation-button navigation-button--back program-button--back" disabled="disabled">Назад</button>
@@ -164,7 +179,7 @@
   <section class="service-reviews" id="service-reviews">
     <div class="container">
       <h3>Отзывы учеников</h3>
-      <div class="service-reviews__block service-reviews__block--active">
+      <div class="service-reviews__block service-reviews__block--1 service-reviews__block--active">
         <div class="service-reviews__item">
           <article>
             <header>
@@ -184,7 +199,7 @@
           </article>
         </div>
       </div>
-      <div class="service-reviews__block">
+      <div class="service-reviews__block service-reviews__block--2">
         <div class="service-reviews__item">
           <article>
             <header>
@@ -204,7 +219,7 @@
           </article>
         </div>
       </div>
-      <div class="service-reviews__block">
+      <div class="service-reviews__block service-reviews__block--3">
         <div class="service-reviews__item">
           <article>
             <header>
@@ -226,9 +241,9 @@
       </div>
       <div class="service-reviews__pagination">
         <ul>
-          <li class="service-reviews__pagination-item service-reviews__pagination-item--active"></li>
-          <li class="service-reviews__pagination-item"></li>
-          <li class="service-reviews__pagination-item"></li>
+          <li class="service-reviews__pagination-item service-reviews__pagination-item--1 service-reviews__pagination-item--active"></li>
+          <li class="service-reviews__pagination-item service-reviews__pagination-item--2"></li>
+          <li class="service-reviews__pagination-item service-reviews__pagination-item--3"></li>
         </ul>
       </div>
       <button class="navigation-button navigation-button--back reviews-button--back" disabled="disabled">Назад</button>
@@ -256,7 +271,14 @@
           <button class="button">Выбрать</button>
         </li>
       </ul>
-      <p class="service-order__contacts">Узнайте больше о процессе обучения <span class="br">8 123 456-78-90</span></p>
+      <div class="service-order__pagination service-order__pagination--dark">
+        <ul>
+          <li class="service-order__pagination-item service-order__pagination-item--1 service-order__pagination-item--active"></li>
+          <li class="service-order__pagination-item service-order__pagination-item--2"></li>
+          <li class="service-order__pagination-item service-order__pagination-item--3"></li>
+        </ul>
+      </div>
+      <p class="service-order__contacts">Узнайте больше о&nbsp;процессе&nbsp;обучения <span class="br">8 123 456-78-90</span></p>
       <button class="navigation-button navigation-button--back order-button--back" disabled="disabled">Назад</button>
       <button class="navigation-button navigation-button--forward order-button--forward">Вперед</button>
     </div>
@@ -310,7 +332,7 @@
     <div class="container">
       <h2>Наша команда педагогов</h2>
       <ul>
-        <li class="service-team__item">
+        <li class="service-team__item service-team__item--1">
           <div class="service-team__item-image">
             <img src="../images/maths/team_photo_1.png" alt="team_photo_1">  
           </div>
@@ -319,7 +341,7 @@
             <p>Образование: Белгородский государственный университет,<br> факультет математики и информационных технологий, направление – математика, магистр математики (диплом с отличием, 2012г.); квалификация – учитель<br> математики и информатики (диплом с отличием, 2010 г.)</p>
           </div>
         </li>
-        <li class="service-team__item">
+        <li class="service-team__item service-team__item--2">
           <div class="service-team__item-image">
             <img src="../images/maths/team_photo_2.png" alt="team_photo_2">  
           </div>
@@ -330,7 +352,7 @@
             <p>Опыт репетиторства – с 2008 года.</p>
           </div>
         </li>
-        <li class="service-team__item">
+        <li class="service-team__item service-team__item--3">
           <div class="service-team__item-image">
             <img src="../images/maths/team_photo_3.png" alt="team_photo_3">  
           </div>
@@ -342,6 +364,13 @@
           </div>
         </li>
       </ul>
+      <div class="service-team__pagination service-team__pagination--dark">
+        <ul>
+          <li class="service-team__pagination-item service-team__pagination-item--1 service-team__pagination-item--active"></li>
+          <li class="service-team__pagination-item service-team__pagination-item--2"></li>
+          <li class="service-team__pagination-item service-team__pagination-item--3"></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -401,24 +430,26 @@
 
   <div class="service-overlay"></div>
   <div class="service-popup">
-    <h3>Сотрудничество</h3>
-    <p>Хотите связаться с преподавателем? Отправьте заявку на сотрудничество.</p>
-    <form name="service-cooperation__form" method="POST" action="#" class="service-cooperation__form">
-      <label for="service-cooperation__form-name">Контактное лицо</label>
-      <input type="text" name="service-cooperation__form-name" id="service-cooperation__form-name">
-      <div class="service-cooperation__form-block">
-        <label for="service-cooperation__form-email">Электронная почта</label>
-        <input type="email" name="service-cooperation__form-email" id="service-cooperation__form-email">
-      </div>
-      <div class="service-cooperation__form-block">
-        <label for="service-cooperation__form-phone">Контактный телефон</label>
-        <input type="text" name="service-cooperation__form-phone" id="service-cooperation__form-phone">
-      </div>
-      <label for="service-cooperation__form-text">Описание запроса</label>
-      <input type="text" name="service-cooperation__form-text" id="service-cooperation__form-text">
-      <input type="submit" name="service-cooperation__form-submit" id="service-cooperation__form-submit" class="button" value="Оставить заявку">
-    </form>
-    <button class="close-button"></button>
+    <div class="container--service-popup">
+      <h3>Сотрудничество</h3>
+      <p>Хотите связаться с преподавателем? Отправьте заявку на сотрудничество.</p>
+      <form name="service-cooperation__form" method="POST" action="#" class="service-cooperation__form">
+        <label for="service-cooperation__form-name">Контактное лицо</label>
+        <input type="text" name="service-cooperation__form-name" id="service-cooperation__form-name">
+        <div class="service-cooperation__form-block">
+          <label for="service-cooperation__form-email">Электронная почта</label>
+          <input type="email" name="service-cooperation__form-email" id="service-cooperation__form-email">
+        </div>
+        <div class="service-cooperation__form-block">
+          <label for="service-cooperation__form-phone">Контактный телефон</label>
+          <input type="text" name="service-cooperation__form-phone" id="service-cooperation__form-phone">
+        </div>
+        <label for="service-cooperation__form-text">Описание запроса</label>
+        <input type="text" name="service-cooperation__form-text" id="service-cooperation__form-text">
+        <input type="submit" name="service-cooperation__form-submit" id="service-cooperation__form-submit" class="button" value="Оставить заявку">
+      </form>
+      <button class="close-button"></button>
+    </div>
   </div>
 
   <script type="text/javascript" src="../scripts/jquery-3.2.1.min.js"></script>

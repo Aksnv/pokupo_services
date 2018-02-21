@@ -113,6 +113,10 @@
   background-color: #fff;
 }
 
+.service-footer__subscribe-form::before {
+  color: #28282c;
+}
+
 .subscribe-form__submit {
   background-image: url("../../images/english/button_subscribe.png");
 }

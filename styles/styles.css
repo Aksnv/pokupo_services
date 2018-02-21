@@ -1684,7 +1684,6 @@ button[disabled="disabled"] {
   display: block;
   font-size: 13px;
   text-transform: uppercase;
-  color: white;
 }
 
 .service-footer__subscribe-form::after {
@@ -2939,7 +2938,10 @@ button[disabled="disabled"] {
 
   .service-popup {
     top: 0;
+    left: 0;
+    width: 100%;
     padding-top: 70px;
+    border-radius: 0;
   }
 
   .container--service-popup {

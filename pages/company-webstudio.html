@@ -27,7 +27,7 @@
           <a href="#"><img src="../images/webstudio/logo.png" alt="Услуги по разработке сайтов"></a>
         </div>
         <div class="service-header__contacts">
-          <p><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></p>
+          <p><a href="#"><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></a></p>
           <p><a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
         </div>
       </div>
@@ -531,26 +531,27 @@
   <button class="back-to-top"></button>
 
   <div class="service-overlay"></div>
-  
   <div class="service-popup">
-    <h3>Сотрудничество</h3>
-    <p>Хотите связаться с преподавателем? Отправьте заявку на сотрудничество.</p>
-    <form name="service-cooperation__form" method="POST" action="#" class="service-cooperation__form">
-      <label for="service-cooperation__form-name">Контактное лицо</label>
-      <input type="text" name="service-cooperation__form-name" id="service-cooperation__form-name">
-      <div class="service-cooperation__form-block">
-        <label for="service-cooperation__form-email">Электронная почта</label>
-        <input type="email" name="service-cooperation__form-email" id="service-cooperation__form-email">
-      </div>
-      <div class="service-cooperation__form-block">
-        <label for="service-cooperation__form-phone">Контактный телефон</label>
-        <input type="text" name="service-cooperation__form-phone" id="service-cooperation__form-phone">
-      </div>
-      <label for="service-cooperation__form-text">Описание запроса</label>
-      <input type="text" name="service-cooperation__form-text" id="service-cooperation__form-text">
-      <input type="submit" name="service-cooperation__form-submit" id="service-cooperation__form-submit" class="button" value="Оставить заявку">
-    </form>
-    <button class="close-button"></button>
+    <div class="container--service-popup">
+      <h3>Сотрудничество</h3>
+      <p>Хотите связаться с преподавателем? Отправьте заявку на сотрудничество.</p>
+      <form name="service-cooperation__form" method="POST" action="#" class="service-cooperation__form">
+        <label for="service-cooperation__form-name">Контактное лицо</label>
+        <input type="text" name="service-cooperation__form-name" id="service-cooperation__form-name">
+        <div class="service-cooperation__form-block">
+          <label for="service-cooperation__form-email">Электронная почта</label>
+          <input type="email" name="service-cooperation__form-email" id="service-cooperation__form-email">
+        </div>
+        <div class="service-cooperation__form-block">
+          <label for="service-cooperation__form-phone">Контактный телефон</label>
+          <input type="text" name="service-cooperation__form-phone" id="service-cooperation__form-phone">
+        </div>
+        <label for="service-cooperation__form-text">Описание запроса</label>
+        <input type="text" name="service-cooperation__form-text" id="service-cooperation__form-text">
+        <input type="submit" name="service-cooperation__form-submit" id="service-cooperation__form-submit" class="button" value="Оставить заявку">
+      </form>
+      <button class="close-button"></button>
+    </div>
   </div>
 
   <div class="page-popup">
