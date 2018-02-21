@@ -2486,6 +2486,10 @@ button[disabled="disabled"] {
     line-height: 36px;
   }
 
+  .navigation-button {
+    display: none;
+  }
+
   /* Service header */
 
   .service-header {
@@ -2626,6 +2630,34 @@ button[disabled="disabled"] {
 
   .service-description ul p {
     margin-bottom: 0;
+  }
+
+  /* Service reviews */
+
+  .service-reviews__block,
+  .service-reviews__item {
+    width: 280px;
+  }
+
+  .service-reviews__block {
+    border-spacing: 0;
+    margin-bottom: 40px;
+  }
+
+  .service-reviews__block--active > .service-reviews__item:last-child {
+    /* display: block;
+    margin-bottom: 0; */
+    display: none;
+  }
+
+  .service-reviews__item {
+    /* margin-bottom: 20px; */
+    padding: 29px 19px;
+    padding-bottom: 27px;
+  }
+
+  .service-reviews__pagination-item {
+    cursor: pointer;
   }
 
   /* Service order */
