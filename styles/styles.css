@@ -930,6 +930,10 @@ button[disabled="disabled"] {
   margin-bottom: 64px;
 }
 
+.service-program__price span.br {
+  display: inline;
+}
+
 .service-program button {
   background-color: #ed1c24;
   margin-bottom: 63px;
@@ -1471,29 +1475,34 @@ button[disabled="disabled"] {
 }
 
 .service-team__pagination,
-.service-order__pagination {
+.service-order__pagination,
+.service-program__pagination {
   display: none;
 } 
 
 .service-team__pagination ul,
-.service-order__pagination ul {
+.service-order__pagination ul,
+.service-program__pagination ul {
   text-align: center;
 }
 
 .service-team__pagination li,
-.service-order__pagination li {
+.service-order__pagination li,
+.service-program__pagination li {
   display: inline-block;
   vertical-align: top;
   margin-right: 4px;
 }
 
 .service-team__pagination li:last-child,
-.service-order__pagination li:last-child {
+.service-order__pagination li:last-child,
+.service-program__pagination li:last-child {
   margin-right: 0;
 }
 
 .service-team__pagination-item,
-.service-order__pagination-item {
+.service-order__pagination-item,
+.service-program__pagination-item {
   display: block;
   width: 8px;
   height: 8px;
@@ -1503,7 +1512,8 @@ button[disabled="disabled"] {
 }
 
 .service-team__pagination--dark .service-team__pagination-item,
-.service-order__pagination--dark .service-order__pagination-item {
+.service-order__pagination--dark .service-order__pagination-item,
+.service-program__pagination--dark .service-program__pagination-item {
   background-color: #c9c9c9;
 }
 
@@ -2630,6 +2640,42 @@ button[disabled="disabled"] {
 
   .service-description ul p {
     margin-bottom: 0;
+  }
+
+  /* Service program */
+
+  .service-program {
+    padding-top: 51px;
+  }
+
+  .service-program h2 {
+    font-family: 'museo_sans_cyrl900';
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 36px;
+  }
+
+  .service-program__item {
+    width: 280px;
+  }
+
+  .service-program p.service-program__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  .service-program__price span.br {
+    display: block;
+  }
+
+  .service-program__pagination {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .service-program button {
+    margin-bottom: 40px;
   }
 
   /* Service reviews */

@@ -160,6 +160,19 @@ $(".program-button--back").click(function() {
 });
 
 
+/* Program pagination */
+
+$(".service-program__pagination-item").click(function() {
+  $(".service-program__pagination-item").removeClass("service-program__pagination-item--active");
+  $(".service-program__item").hide();
+  $(".service-program__item").removeClass("service-program__item--active");
+  $(this).addClass("service-program__pagination-item--active");
+  var num = $(this).attr("class").charAt(67);
+  $(".service-program__item--" + num).show();
+  $(".service-program__item--" + num).addClass("service-program__item--active");
+});
+
+
 /* Reviews carousel */
 
 $(".reviews-button--forward").click(function() {

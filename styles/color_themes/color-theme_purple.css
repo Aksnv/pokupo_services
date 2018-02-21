@@ -51,6 +51,10 @@
   background-color: #ed1c24;
 }
 
+.service-program__pagination--dark .service-program__pagination-item--active {
+  background-color: #ed1c24;
+}
+
 .service-reviews {
   background-color: #62406b;
   color: #fff;
