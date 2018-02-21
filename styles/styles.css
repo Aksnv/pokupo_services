@@ -2698,8 +2698,17 @@ button[disabled="disabled"] {
     width: 130px;
   }
 
-  .service-description li {
-    margin-bottom: 8px;
+  .service-description li:nth-child(n) {
+    margin-right: 8px;
+  }
+
+  .service-description li:nth-child(2n+2), 
+  .service-description li:last-child {
+    margin-right: 0;
+  }
+
+  .service-description--company li {
+    margin-bottom: 15px;
   }
 
   .service-description__image {
