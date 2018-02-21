@@ -1523,6 +1523,7 @@ button[disabled="disabled"] {
   width: 100%;
   height: 8px;
   background-image: linear-gradient(to bottom, #c3c3c3 0%, #f7f7f7 100%);
+  z-index: 1;
 }
 
 .service-map__header h2 {
@@ -2635,6 +2636,21 @@ button[disabled="disabled"] {
 
   .service-team__item--1 {
     display: block;
+  }
+
+  /* Service map */
+
+  .service-map__header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .service-map__header h2 {
+    margin-bottom: 13px;
+  }
+
+  .service-map__map {
+    height: 531px;
   }
 
   /* Service footer */
