@@ -2850,6 +2850,33 @@ button[disabled="disabled"] {
     padding-bottom: 27px;
   }
 
+  .service-reviews--company .service-reviews__item {
+    padding: 20px 19px;
+    padding-bottom: 37px;
+  }
+
+  /* .service-reviews__item--with-photo .service-reviews__photo {
+    float: none;
+  } */
+
+  .service-reviews__item--with-photo header {
+    position: absolute;
+    top: -73px;
+    right: 0;
+    width: 132px;
+  }
+
+  .service-reviews__item--with-photo time {
+    display: block;
+  }
+
+  .service-reviews__item--with-photo article {
+    clear: both;
+    position: relative;
+    margin-left: 0;
+    padding-top: 25px;
+  }
+
   .service-reviews__pagination-item {
     cursor: pointer;
   }
@@ -3089,6 +3116,24 @@ button[disabled="disabled"] {
     width: 19px;
     height: 19px;
     background-image: url("../images/icons/menu_close_white.png");
+  }
+
+  /* Page popup */
+
+  .page-popup {
+    padding-top: 70px;
+  }
+
+  .page-popup img {
+    position: relative;
+    left: -10px;
+    max-width: 300px;
+    margin-top: 24px;
+    margin-bottom: 33px;
+  }
+
+  .return-button {
+    top: -52px;
   }
 
 }

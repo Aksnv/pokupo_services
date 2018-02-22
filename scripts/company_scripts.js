@@ -259,6 +259,19 @@ $(".reviews-button--back").click(function() {
 });
 
 
+/* Reviews pagination */
+
+$(".service-reviews__pagination-item").click(function() {
+  $(".service-reviews__pagination-item").removeClass("service-reviews__pagination-item--active");
+  $(".service-reviews__block").hide();
+  $(".service-reviews__block").removeClass("service-reviews__block--active");
+  $(this).addClass("service-reviews__pagination-item--active");
+  var num = $(this).attr("class").charAt(67);
+  $(".service-reviews__block--" + num).show();
+  $(".service-reviews__block--" + num).addClass("service-reviews__block--active");
+});
+
+
 /* Order carousel */
 
 $(".order-button--forward").click(function() {
