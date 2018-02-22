@@ -981,8 +981,8 @@ button[disabled="disabled"] {
   font-size: 15px;
   text-align: left;
   margin-right: 20px;
-  padding: 40px 75px;
-  padding-bottom: 57px;
+  padding: 40px 80px;
+  padding-bottom: 80px;
   background-color: white;
   border-radius: 8px;
 }
@@ -1006,11 +1006,19 @@ button[disabled="disabled"] {
 
 .service-reviews__item--with-photo article {
   margin-left: 115px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
-.service-reviews__item header {
-  margin-bottom: 6px;
+.service-reviews__header {
+  margin-bottom: 8px;
+  /* margin-left: 115px; */
+  /* padding-top: 10px; */
+}
+
+.service-reviews__item--with-photo .service-reviews__header {
+  margin-left: 115px;
+  margin-bottom: 0;
+  padding-top: 10px;
 }
 
 .service-reviews__item time {
@@ -2321,11 +2329,12 @@ button[disabled="disabled"] {
 
   .service-reviews__item {
     display: block;
+    width: 509px;
     margin: 0 auto;
   }
 
   .service-reviews__item--with-photo {
-    width: 509px;
+    /* width: 509px; */
     padding-bottom: 78px;
   }
 
