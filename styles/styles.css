@@ -2790,6 +2790,18 @@ button[disabled="disabled"] {
     width: 280px;
   }
 
+  .service-program--company .service-program__item h3 {
+    margin-bottom: 36px;
+  }
+
+  .service-program--company .service-program__item h4 {
+    padding-top: 41px;
+  }
+
+  .service-program--company .service-program__item ul {
+    margin-bottom: 34px;
+  }
+
   .service-program p.service-program__price {
     font-size: 20px;
     line-height: 24px;
@@ -2807,6 +2819,11 @@ button[disabled="disabled"] {
 
   .service-program button {
     margin-bottom: 40px;
+  }
+
+  .service-program--company .service-order__contacts {
+    top: 0;
+    margin-bottom: 55px;
   }
 
   /* Service reviews */
