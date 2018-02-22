@@ -73,7 +73,9 @@
   background-color: #ed1c24;
 }
 
-.service-program__pagination--dark .service-reviews__pagination-item--active {
+.service-program__pagination--dark .service-program__pagination-item--active,
+.service-portfolio__pagination--dark .service-portfolio__pagination-item--active,
+.service-reviews__pagination-item--active {
   background-color: #ed1c24;
 }
 

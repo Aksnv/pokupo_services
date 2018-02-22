@@ -1476,6 +1476,7 @@ button[disabled="disabled"] {
 
 .service-team__pagination,
 .service-order__pagination,
+.service-portfolio__pagination,
 .service-program__pagination,
 .service-achievements__pagination {
   display: none;
@@ -1483,6 +1484,7 @@ button[disabled="disabled"] {
 
 .service-team__pagination ul,
 .service-order__pagination ul,
+.service-portfolio__pagination ul,
 .service-program__pagination ul,
 .service-achievements__pagination ul {
   text-align: center;
@@ -1490,6 +1492,7 @@ button[disabled="disabled"] {
 
 .service-team__pagination li,
 .service-order__pagination li,
+.service-portfolio__pagination li,
 .service-program__pagination li,
 .service-achievements__pagination li {
   display: inline-block;
@@ -1499,6 +1502,7 @@ button[disabled="disabled"] {
 
 .service-team__pagination li:last-child,
 .service-order__pagination li:last-child,
+.service-portfolio__pagination li:last-child,
 .service-program__pagination li:last-child,
 .service-achievements__pagination li:last-child {
   margin-right: 0;
@@ -1506,6 +1510,7 @@ button[disabled="disabled"] {
 
 .service-team__pagination-item,
 .service-order__pagination-item,
+.service-portfolio__pagination-item,
 .service-program__pagination-item,
 .service-achievements__pagination-item {
   display: block;
@@ -1518,6 +1523,7 @@ button[disabled="disabled"] {
 
 .service-team__pagination--dark .service-team__pagination-item,
 .service-order__pagination--dark .service-order__pagination-item,
+.service-portfolio__pagination--dark .service-portfolio__pagination-item,
 .service-program__pagination--dark .service-program__pagination-item {
   background-color: #c9c9c9;
 }
@@ -2724,10 +2730,46 @@ button[disabled="disabled"] {
     margin-bottom: 0;
   }
 
+  /* Service portfolio */
+
+  .container--portfolio {
+    width: 320px;
+  }
+
+  .service-portfolio {
+    min-height: 498px;
+    padding-top: 36px;
+  }
+
+  .service-portfolio h3 {
+    margin-bottom: 28px;
+  }
+
+  .service-portfolio__gallery {
+    margin-bottom: 30px;
+  }
+
+  .service-portfolio__gallery-item {
+    display: none;
+  }
+
+  .service-portfolio__gallery-item--1,
+  .service-portfolio__gallery-item--2 {
+    display: block;
+  }
+
+  .service-portfolio__pagination {
+    display: block;
+  }
+
   /* Service program */
 
   .service-program {
     padding-top: 51px;
+  }
+
+  .service-program--company {
+    padding-top: 25px;
   }
 
   .service-program h2 {
@@ -2735,6 +2777,13 @@ button[disabled="disabled"] {
     font-size: 25px;
     line-height: 34px;
     margin-bottom: 36px;
+  }
+
+  .service-program--company h2 {
+    font-family: 'museo_sans_cyrl300';
+    font-size: 35px;
+    line-height: 36px;
+    margin-bottom: 27px;
   }
 
   .service-program__item {
@@ -3024,6 +3073,5 @@ button[disabled="disabled"] {
     height: 19px;
     background-image: url("../images/icons/menu_close_white.png");
   }
-
 
 }

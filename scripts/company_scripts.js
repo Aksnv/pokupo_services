@@ -158,6 +158,18 @@ function countdownCounter() {
 setInterval(countdownCounter, 1000);
 
 
+/* Portfolio pagination */
+
+$(".service-portfolio__pagination-item").click(function() {
+  $(".service-portfolio__pagination-item").removeClass("service-portfolio__pagination-item--active");
+  $(".service-portfolio__gallery-item").hide();
+  $(this).addClass("service-portfolio__pagination-item--active");
+  var num = $(this).attr("class").charAt(71);
+  $(".service-portfolio__gallery-item--" + (num * 2 - 1)).show();
+  $(".service-portfolio__gallery-item--" + (num * 2)).show();
+});
+
+
 /* Program carousel */
 
 $(".program-button--forward").click(function() {
