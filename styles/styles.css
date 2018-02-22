@@ -490,10 +490,12 @@ button[disabled="disabled"] {
 
 .service-person__photo img {
   display: block;
-  width: auto;
+  /* width: auto;
   max-width: 530px;
   height: auto;
-  max-height: 530px;
+  max-height: 530px; */
+  width: 530px;
+  height: 530px;
   border-radius: 50%;
 }
 
@@ -1439,8 +1441,10 @@ button[disabled="disabled"] {
 }
 
 .service-team button {
-  margin-top: 50px;
-  margin-bottom: 15px;
+  /* margin-top: 50px;
+  margin-bottom: 15px; */
+  margin-top: 3px;
+  margin-bottom: 66px;
 }
 
 .service-team__item {
@@ -2472,10 +2476,10 @@ button[disabled="disabled"] {
     margin-right: 0;
   } */
 
-  .service-team--company button {
+  /* .service-team--company button {
     position: relative;
     top: -50px;
-  }
+  } */
 
   /* Service footer */
 
@@ -3020,6 +3024,8 @@ button[disabled="disabled"] {
 
   .service-team--company button {
     top: -36px;
+    margin-top: 14px;
+    margin-bottom: 50px;
   }
 
   /* Service map */
