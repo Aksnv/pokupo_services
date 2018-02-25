@@ -2435,7 +2435,7 @@ button[disabled="disabled"] {
   }
 
   .service-feedback__offer-counter {
-    width: 290px;
+    width: 300px;
     margin: 0 auto;
     padding-top: 25px;
   }
@@ -2969,7 +2969,7 @@ button[disabled="disabled"] {
   }
 
   .service-feedback__offer-counter {
-    padding-left: 5px;
+    padding-left: 10px;
   }
 
   .offer-counter__content {
