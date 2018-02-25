@@ -236,6 +236,7 @@ button[disabled="disabled"] {
   height: 15px;
   background-image: url("../images/icons/menu.png");
   background-color: transparent;
+  background-repeat: no-repeat;
   border: none;
   outline: none;
   cursor: pointer;
