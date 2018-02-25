@@ -2969,7 +2969,8 @@ button[disabled="disabled"] {
   }
 
   .service-feedback__offer-counter {
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    margin-left: 20px;
   }
 
   .offer-counter__content {
