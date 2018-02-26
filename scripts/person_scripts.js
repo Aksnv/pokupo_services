@@ -48,7 +48,7 @@ $(".button--popup").click(function() {
 $(".close-button").click(function() {
   $(".service-overlay").removeClass("service-overlay--active");
   $(".service-popup").removeClass("service-popup--active");
-  $("body").css("overflowY", "hidden");
+  $("body").css("overflowY", "scroll");
 });
 
 
