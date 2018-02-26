@@ -25,14 +25,16 @@ $(".service-order__item button.button").mouseout(function() {
 /* Service order item height */
 
 $(document).ready(function() {
-  var maxHeight = +$($(".service-order__item h4")[0]).css("height").split("px")[0];
-  for (var i = 1; i < $(".service-order__item h4").length; i++) {
-    if (+$($(".service-order__item h4")[i]).css("height").split("px")[0] > maxHeight) {
-      maxHeight = +$($(".service-order__item h4")[i]).css("height").split("px")[0];
+  if ($(".container").css("width") == "1180px") {
+    var maxHeight = +$($(".service-order__item h4")[0]).css("height").split("px")[0];
+    for (var i = 1; i < $(".service-order__item h4").length; i++) {
+      if (+$($(".service-order__item h4")[i]).css("height").split("px")[0] > maxHeight) {
+        maxHeight = +$($(".service-order__item h4")[i]).css("height").split("px")[0];
+      }
     }
-  }
-  for (var i = 0; i < $(".service-order__item h4").length; i++) {
-    $($(".service-order__item h4")[i]).css("height", maxHeight);
+    for (var i = 0; i < $(".service-order__item h4").length; i++) {
+      $($(".service-order__item h4")[i]).css("height", maxHeight);
+    }
   }
 });
 
