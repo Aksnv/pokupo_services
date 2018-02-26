@@ -154,7 +154,7 @@
 
 }
 
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 767px) {
 
   .service-order__item {
     border: 2px solid #f9b500;
