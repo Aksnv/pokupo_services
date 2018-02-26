@@ -2522,9 +2522,9 @@ button[disabled="disabled"] {
     position: relative;
   } */
 
-  /* .service-header__menu-button--close {
-    left: auto;
-  } */
+  .service-header__menu-button--close {
+    left: 728px;
+  } 
 
 }
 
