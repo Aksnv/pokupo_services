@@ -42,11 +42,13 @@ $(document).ready(function() {
 $(".button--popup").click(function() {
   $(".service-overlay").addClass("service-overlay--active");
   $(".service-popup").addClass("service-popup--active");
+  $("body").css("overflowY", "hidden");
 });
 
 $(".close-button").click(function() {
   $(".service-overlay").removeClass("service-overlay--active");
   $(".service-popup").removeClass("service-popup--active");
+  $("body").css("overflowY", "scroll");
 });
 
 
