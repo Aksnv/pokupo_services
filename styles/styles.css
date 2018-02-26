@@ -2957,7 +2957,8 @@ button[disabled="disabled"] {
   }
 
   .service-feedback__offer {
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
     padding-bottom: 30px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -2976,7 +2977,8 @@ button[disabled="disabled"] {
 
   .service-feedback__offer-counter {
     /* padding-left: 10px; */
-    margin-left: 10px;
+    padding-left: 0;
+    /* margin-left: 10px; */
   }
 
   .offer-counter__content {
