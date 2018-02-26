@@ -2514,18 +2514,17 @@ button[disabled="disabled"] {
 
 }
 
-@media screen and (max-width: 1243px) {
+@media screen and (max-width: 1023px) {
 
   /* Service header */
 
-  .service-header__wrapper {
+  /* .service-header__wrapper {
     position: relative;
-  }
+  } */
 
-  .service-header__menu-button--close {
+  /* .service-header__menu-button--close {
     left: auto;
-    right: 30px;
-  }
+  } */
 
 }
 
@@ -2586,7 +2585,7 @@ button[disabled="disabled"] {
   .service-header__menu-button--close {
     top: -2px;
     left: calc(50% - 162px);
-    right: auto;
+    /* right: auto; */
   }
 
   .service-header__logo {
