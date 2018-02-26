@@ -2376,6 +2376,7 @@ button[disabled="disabled"] {
 
   .service-order__item--visible {
     display: table-cell;
+    height: auto;
   }
 
   .service-order__item--active {
