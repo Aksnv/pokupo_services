@@ -2514,7 +2514,7 @@ button[disabled="disabled"] {
 
 }
 
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 767px) {
 
   .container {
     width: 280px;
