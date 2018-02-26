@@ -1939,6 +1939,7 @@ button[disabled="disabled"] {
   margin-top: 20px;
   background-color: #ed1c24;
   color: #fff;
+  -webkit-appearance: none;
 }
 
 .close-button {
