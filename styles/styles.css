@@ -3101,6 +3101,7 @@ button[disabled="disabled"] {
   /* Service popup */
 
   .service-popup {
+    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100%;
