@@ -2376,7 +2376,7 @@ button[disabled="disabled"] {
 
   .service-order__item--visible {
     display: table-cell;
-    height: 517px;
+    height: 217px;
     /* height: auto; */
   }
 
