@@ -329,6 +329,48 @@ $(".service-team__pagination-item").click(function() {
 });
 
 
+/* Service ordering - Upload file name */
+
+$(".service-ordering__file--1 .service-ordering__upload-file input[type='file']").change(function() {
+  var fileName_1 = $(this).val().replace(/.*\\/, "");
+  if (fileName_1 != "") {
+    $(".service-ordering__file--1 .service-ordering__file-name").val(fileName_1);
+    $(".service-ordering__file--1 .service-ordering__upload-file").addClass("service-ordering__upload-file--uploaded");
+  } else {
+    $(".service-ordering__file--1 .service-ordering__file-name").val("");
+    $(".service-ordering__file--1 .service-ordering__upload-file").removeClass("service-ordering__upload-file--uploaded");
+  }
+});
+
+$(".service-ordering__file--2 .service-ordering__upload-file input[type='file']").change(function() {
+  var fileName_2 = $(this).val().replace(/.*\\/, "");
+  if (fileName_2 != "") {
+    $(".service-ordering__file--2 .service-ordering__file-name").val(fileName_2);
+    $(".service-ordering__file--2 .service-ordering__upload-file").addClass("service-ordering__upload-file--uploaded");
+  } else {
+    $(".service-ordering__file--2 .service-ordering__file-name").val("");
+    $(".service-ordering__file--2 .service-ordering__upload-file").removeClass("service-ordering__upload-file--uploaded");
+  }
+});
+
+
+/* Service ordering - Delete file button */
+
+$(".service-ordering__file--1 .service-ordering__delete-file").click(function(e) {
+  e.preventDefault();
+  $(".service-ordering__file--1 .service-ordering__upload-file input[type='file']").val("");
+  $(".service-ordering__file--1 .service-ordering__file-name").val("");
+  $(".service-ordering__file--1 .service-ordering__upload-file").removeClass("service-ordering__upload-file--uploaded");
+});
+
+$(".service-ordering__file--2 .service-ordering__delete-file").click(function(e) {
+  e.preventDefault();
+  $(".service-ordering__file--2 .service-ordering__upload-file input[type='file']").val("");
+  $(".service-ordering__file--2 .service-ordering__file-name").val("");
+  $(".service-ordering__file--2 .service-ordering__upload-file").removeClass("service-ordering__upload-file--uploaded");
+});
+
+
 /* Back-to-top button */
 
 (function () {
@@ -347,3 +389,14 @@ $(".back-to-top").click(function() {
   }, 1000);
   return false;
 });
+
+
+/* jQuery Form Styler activation */
+
+(function($) {
+$(function() {
+
+  $('select').styler();
+    
+});
+})(jQuery);

@@ -319,3 +319,14 @@ $(".back-to-top").click(function() {
   }, 1000);
   return false;
 });
+
+
+/* jQuery Form Styler activation */
+
+(function($) {
+$(function() {
+
+  $('select').styler();
+    
+});
+})(jQuery);
