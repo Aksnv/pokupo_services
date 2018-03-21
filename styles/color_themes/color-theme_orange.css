@@ -132,6 +132,55 @@
   background-color: #f9b500;
 }
 
+.service-ordering__tab--active {
+  border-bottom: 3px solid #f9b500;
+}
+
+.service-ordering__gender input[type="radio"]:checked + label[for="service-ordering__male"]::before {
+  background-image: url("../../images/icons/male_orange.png");
+}
+
+.service-ordering__gender input[type="radio"]:checked + label[for="service-ordering__female"]::before {
+  background-image: url("../../images/icons/female_orange.png");
+}
+
+.service-ordering .jq-selectbox.focused {
+  border-color: #f9b500;
+}
+
+.service-ordering__intercom input[type="radio"]:checked + label::before {
+  background-color: #f9b500;
+  border: 2px solid #f9b500;
+}
+
+.service-ordering__checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #f9b500;
+  border: 1px solid #f9b500;
+}
+
+.service-ordering__upload-file label::before {
+  background-image: url("../../images/icons/upload_file_orange.png");
+}
+
+.service-ordering__upload-file label {
+  color: #f9b500;
+}
+
+.service-ordering input[type="submit"] {
+  background-color: #ffb900;
+  border: 1px solid #ffb900;
+  color: #fff;
+}
+
+.service-ordering__personal-data input[type="checkbox"]:checked + label::before {
+  background-color: #f9b500;
+  border: 1px solid #f9b500;
+}
+
+.service-ordering__personal-data a {
+  color: #f9b500;
+}
+
 @media screen and (max-width: 1243px) {
 
   /* Service header */

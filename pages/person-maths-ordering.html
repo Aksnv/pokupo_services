@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Репетитор по математике</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" type="text/css" href="../styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/color_themes/color-theme_orange.css">
+</head>
+<body>
+  <header class="service-header">
+    <div class="service-header__wrapper">
+      <button class="service-header__menu-button"></button>
+      <nav class="service-header__menu">
+        <ul>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--1 service-header__menu-item--active">Главная</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--2">О преподавателе</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--3">Программа</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--4">Отзывы</a></li>
+          <li><a href="#" class="service-header__menu-item service-header__menu-item--5">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="container container--header">
+        <div class="service-header__logo">
+          <a href="#"><img src="../images/maths/logo.png" alt="Услуги репетитора по математике"></a>
+        </div>
+        <div class="service-header__contacts">
+          <p><a href="tel:+81234567890"><strong class="service-header__contacts-phone">8 (123) 456-78-90</strong></a></p>
+          <p><a class="service-header__contacts-email" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="service-ordering service-ordering--company">
+    <h1>Оформление заказа</h1>
+    <div class="service-ordering__tabs">
+      <ul>
+        <li class="service-ordering__tab service-ordering__tab--active">Шаг 1</li>
+        <li class="service-ordering__tab">Шаг 2</li>
+      </ul>
+    </div>
+    <form class="service-ordering__information" name="service-ordering__information" action="#" method="POST">
+      <h2>Контактные данные</h2>
+      <p>Укажите свои контактные данные</p>
+      <label for="service-ordering__name">Контактное лицо</label>
+      <input type="text" name="service-ordering__name" id="service-ordering__name">
+      <div class="service-ordering__email">
+        <label for="service-ordering__email">Электронная почта</label>
+        <input type="email" name="service-ordering__email" id="service-ordering__email">
+      </div>
+      <div class="service-ordering__phone">
+        <label for="service-ordering__phone">Контактный телефон</label>
+        <input type="tel" name="service-ordering__phone" id="service-ordering__phone">
+      </div>
+      <label for="service-ordering__description">Описание запроса</label>
+      <input type="text" name="service-ordering__description" id="service-ordering__description">
+      <div class="service-ordering__gender">
+        <input type="radio" name="service-ordering__gender" id="service-ordering__male" checked="checked">
+        <label for="service-ordering__male">Я мужчина</label>
+      </div>
+      <div class="service-ordering__gender">
+        <input type="radio" name="service-ordering__gender" id="service-ordering__female">
+        <label for="service-ordering__female">Я женщина</label>
+      </div>
+      <label>Страна проживания</label>
+      <select name="service-ordering__country">
+        <option value="">Россия</option>
+        <option value="">Украина</option>
+        <option value="">Казахстан</option>
+      </select>
+      <label>Город проживания</label>
+      <select name="service-ordering__city">
+        <option value="">Иркутск</option>
+        <option value="">Новосибирск</option>
+        <option value="">Магадан</option>
+      </select>
+      <div class="service-ordering__street">
+        <label for="service-ordering__street">Улица</label>
+        <input type="text" name="service-ordering__street" id="service-ordering__street">
+      </div>
+      <div class="service-ordering__house">
+        <label for="service-ordering__house">Дом</label>
+        <input type="text" name="service-ordering__house" id="service-ordering__house">
+      </div>
+      <div class="service-ordering__flat">
+        <label for="service-ordering__flat">Квартира</label>
+        <input type="text" name="service-ordering__flat" id="service-ordering__flat">
+      </div>
+      <div class="service-ordering__intercom service-ordering__intercom--yes">
+        <input type="radio" name="service-ordering__intercom" id="service-ordering__intercom-yes" checked="checked">
+        <label for="service-ordering__intercom-yes">Есть домофон</label>
+      </div>
+      <div class="service-ordering__intercom service-ordering__intercom--no">
+        <input type="radio" name="service-ordering__intercom" id="service-ordering__intercom-no">
+        <label for="service-ordering__intercom-no">Нет домофона</label>
+      </div>
+      <label for="service-ordering__text">Комментарий</label>
+      <textarea name="service-ordering__text" id="service-ordering__text"></textarea>
+      <div class="service-ordering__checkbox">
+        <input type="checkbox" name="service-ordering__checkbox-1" id="service-ordering__checkbox-1" checked="checked">
+        <label for="service-ordering__checkbox-1">Чекбокс</label>
+      </div>
+      <div class="service-ordering__checkbox">
+        <input type="checkbox" name="service-ordering__checkbox-2" id="service-ordering__checkbox-2">
+        <label for="service-ordering__checkbox-2">Чекбокс</label>
+      </div>
+      <div class="service-ordering__checkbox service-ordering__checkbox--last">
+        <input type="checkbox" name="service-ordering__checkbox-3" id="service-ordering__checkbox-3">
+        <label for="service-ordering__checkbox-3">Чекбокс</label>
+      </div>
+      <div class="service-ordering__file service-ordering__file--1">
+        <p>Прикрепить файл (JPG, PNG, DOC, PDF, не более 20 МБ)</p>
+        <div class="service-ordering__upload-file">
+          <label>
+            <input type="file" name="service-ordering__upload-file">
+            <span>Загрузить файл</span>
+            <button class="service-ordering__delete-file"></button>
+          </label>
+        </div>
+        <input type="text" class="service-ordering__file-name" disabled>
+      </div>
+      <div class="service-ordering__file service-ordering__file--2">
+        <p>Прикрепить файл (JPG, PNG, DOC, PDF, не более 20 МБ)</p>
+        <div class="service-ordering__upload-file">
+          <label>
+            <input type="file" name="service-ordering__upload-file">
+            <span>Загрузить файл</span>
+            <button class="service-ordering__delete-file"></button>
+          </label>
+        </div>
+        <input type="text" class="service-ordering__file-name" disabled>
+      </div>
+      <input type="reset" class="button" name="service-ordering__reset" value="Отмена">
+      <input type="submit" class="button" name="service-ordering__submit" value="Сохранить">
+      <div class="service-ordering__personal-data">
+        <input type="checkbox" name="service-ordering__personal-data" id="service-ordering__personal-data">
+        <label for="service-ordering__personal-data">Даю согласие на <a href="#">обработку персональных данных</a></label>
+      </div>
+    </form>
+  </section>
+
+  <footer class="service-footer">
+    <div class="container">
+      <div class="service-footer__block">
+        <ul>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Как покупать</a></li>
+          <li><a href="#">Как продавать</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="service-footer__block">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Подарочные карты</a></li>
+        </ul>
+      </div>
+      <div class="service-footer__block service-footer__block--right">
+        <div class="service-footer__social">
+          <ul>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--vk">Vkontakte</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--fb">Facebook</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--tw">Twitter</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--lj">Livejournal</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--hh">Habrahabr</a></li>
+            <li><a href="#" class="service-footer__social-item service-footer__social-item--gp">Google+</a></li>
+          </ul>
+        </div>
+        <form name="service-footer__subscribe-form" method="POST" action="#" class="service-footer__subscribe-form">
+          <!-- <label>Оформить подписку</label> -->
+          <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="Ваш email" >
+          <input type="submit" name="subscribe-form__submit" class="subscribe-form__submit" value="">
+        </form>
+        <div class="service-footer__copyrights">
+          <p>Работает на основе технологии <a href="https://pokupo.ru/">Pokupo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top"></button>
+
+  <script type="text/javascript" src="../scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../scripts/jquery.formstyler.min.js"></script>
+  <script type="text/javascript" src="../scripts/person_scripts.js"></script>
+
+</body>
+</html>
