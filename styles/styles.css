@@ -3715,4 +3715,130 @@ button[disabled="disabled"] {
     top: -52px;
   }
 
+  /* Service ordering */
+
+  .service-ordering {
+    width: 280px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .service-ordering h1 {
+    font-family: 'museo_sans_cyrl500';
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 12px;
+  }
+
+  .service-ordering__information {
+    position: relative;
+  }
+
+  .service-ordering__information h2 + p {
+    margin-bottom: 32px;
+  }
+
+  .service-ordering input, 
+  .service-ordering textarea {
+    width: 280px;
+  }
+
+  .service-ordering input[name="service-ordering__description"] {
+    margin-bottom: 23px;
+  }
+
+  .service-ordering__gender {
+    margin-right: 28px;
+    margin-bottom: 21px;
+  }
+
+  .service-ordering__gender label {
+    font-family: 'museo_sans_cyrl300';
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 8px;
+  }
+
+  .service-ordering__gender label::before {
+    top: 0;
+    width: 26px;
+    height: 26px;
+    -webkit-background-size: 26px 26px;
+    background-size: 26px 26px;
+  }
+
+  .service-ordering .jq-selectbox,
+  .service-ordering .jq-selectbox__dropdown,
+  .service-ordering .jq-selectbox__dropdown ul {
+    width: 280px;
+  }
+
+  .service-ordering .jq-selectbox select {
+    width: 276px;
+  }
+
+  .service-ordering__street, 
+  .service-ordering__house, 
+  .service-ordering__flat {
+    margin-bottom: 0;
+  }
+
+  .service-ordering__house, 
+  .service-ordering__flat,
+  .service-ordering__house input, 
+  .service-ordering__flat input {
+    width: 130px;
+  }
+
+  .service-ordering__house, 
+  .service-ordering__flat {
+    margin-bottom: 13px;
+  }
+
+  .service-ordering__intercom {
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+
+  .service-ordering__intercom--no {
+    margin-bottom: 10px;
+  }
+
+  .service-ordering__upload-file {
+    width: 280px;
+  }
+
+  .service-ordering__file input[type="text"] {
+    top: 41px;
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .service-ordering input[type="submit"], 
+  .service-ordering input[type="reset"] {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .service-ordering input[type="submit"] {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+  }
+
+  .service-ordering input[type="reset"] {
+    margin-top: 142px;
+  }
+
+  .service-ordering__personal-data {
+    position: absolute;
+    left: 0;
+    bottom: 142px;
+    text-align: left;
+    padding-left: 32px;
+  }
+
 }
