@@ -2992,7 +2992,7 @@ button[disabled="disabled"] {
   }
 
   .service-feedback__offer-counter {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     padding-top: 25px;
   }
@@ -3544,9 +3544,58 @@ button[disabled="disabled"] {
   }
 
   .service-feedback__offer-counter {
+    width: 300px;
     /* padding-left: 10px; */
     padding-left: 0;
     /* margin-left: 10px; */
+  }
+
+  .service-feedback__offer-counter strong {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .offer-counter__days, 
+  .offer-counter__hours, 
+  .offer-counter__minutes, 
+  .offer-counter__seconds {
+    width: 55px;
+    letter-spacing: 14px;
+  }
+
+  .offer-counter__days::before, 
+  .offer-counter__hours::before, 
+  .offer-counter__minutes::before, 
+  .offer-counter__seconds::before,
+  .offer-counter__days::after, 
+  .offer-counter__hours::after, 
+  .offer-counter__minutes::after, 
+  .offer-counter__seconds::after {
+    width: 30px;
+    height: 52px;
+  }
+
+  .offer-counter__days::before, 
+  .offer-counter__hours::before, 
+  .offer-counter__minutes::before, 
+  .offer-counter__seconds::before {
+    left: -4px;
+  }
+
+  .offer-counter__days::after, 
+  .offer-counter__hours::after, 
+  .offer-counter__minutes::after, 
+  .offer-counter__seconds::after {
+    left: 31px;
+  }
+
+  .offer-counter__separator {
+    margin-left: -5px;
+    margin-right: 2px;
+  }
+
+  .offer-counter__text {
+    left: 7px;
   }
 
   .offer-counter__content {
