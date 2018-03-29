@@ -124,11 +124,11 @@ $(".service-header__menu-item--7").click(function() {
 /* Offer counter */
 
 function countdownCounter() {
-  var finishDate = new Date(2019, 0, 1);
+  var finishDate = new Date(2018, 4, 1);
   var curentDate = new Date();
 
   if ((curentDate - finishDate) >= 0) {
-    /*$(".header-top__timer-days span").text(0);*/
+    $(".offer-counter__days").text(0);
     $(".offer-counter__hours").text(0);
     $(".offer-counter__minutes").text(0);
     $(".offer-counter__seconds").text(0);
@@ -139,8 +139,11 @@ function countdownCounter() {
     var minutes = Math.floor((((time / (24 * 3600 * 1000) - days) * 24) - hours) * 60);
     var seconds = Math.floor((((((time / (24 * 3600 * 1000) - days) * 24) - hours) * 60) - minutes) * 60);
 
-    /*$(".header-top__timer-days span").text(days);
-    $(".header-top__timer-hours span").text(hours);*/
+    if (days < 10) {
+      $(".offer-counter__days").text("0" + days);
+    } else {
+      $(".offer-counter__days").text(days);
+    }
     if (hours < 10) {
       $(".offer-counter__hours").text("0" + hours);
     } else {
