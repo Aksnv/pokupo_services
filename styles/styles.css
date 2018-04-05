@@ -981,8 +981,10 @@ button[disabled="disabled"] {
 .service-reviews__item {
   display: table-cell;
   width: 448px;
+  max-width: 448px;
   font-size: 15px;
   text-align: left;
+  word-wrap: break-word;
   margin-right: 20px;
   padding: 40px 80px;
   padding-bottom: 80px;
@@ -991,6 +993,8 @@ button[disabled="disabled"] {
 }
 
 .service-reviews__item--with-photo {
+  max-width: 508px; 
+  word-wrap: break-word;
   padding: 30px 25px;
   padding-right: 85px;
   padding-bottom: 39px;
