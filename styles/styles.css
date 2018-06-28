@@ -259,6 +259,7 @@ button[disabled="disabled"] {
   height: 800px;
   /* padding-top: 267px; */
   padding-left: 83px;
+  padding-right: 20px;
   transition: all 0.5s ease-out;
   z-index: 2;
   /* max-width: 600px;
@@ -335,7 +336,7 @@ button[disabled="disabled"] {
   height: 53px;
   margin-top: 39px;
   margin-left: 93px;
-  margin-right: 142px;
+  /* margin-right: 142px; */
   transition: all 0.5s ease-out;
 }
 
@@ -1919,7 +1920,7 @@ button[disabled="disabled"] {
   margin-right: 15px;
 }
 
-.service-cooperation__form-block:last-of-type {
+.service-cooperation__form-block + .service-cooperation__form-block {
   margin-right: 0;
 }
 
@@ -1938,8 +1939,10 @@ button[disabled="disabled"] {
   font-size: 14px;
   line-height: 42px;
   margin-bottom: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: white;
   color: black;
   border: none;
@@ -1954,12 +1957,19 @@ button[disabled="disabled"] {
 }
 
 .service-cooperation__form input[type="submit"] {
-  width: 328px;
-  height: 60px;
-  line-height: 60px;
+  /* width: 328px; */
+  width: auto;
+  min-width: 328px;
+  /* height: 60px; */
+  height: auto;
+  min-height: 60px;
+  /* line-height: 60px; */
+  line-height: 20px; 
   margin-top: 20px;
   background-color: #ed1c24;
   color: #fff;
+  word-wrap: break-word;
+  white-space: pre-line; 
   -webkit-appearance: none;
 }
 
@@ -2643,6 +2653,7 @@ button[disabled="disabled"] {
     height: 1024px;
     text-align: center;
     padding-left: 0;
+    padding-right: 0;
   }
 
   .service-header__menu li {
@@ -3209,7 +3220,11 @@ button[disabled="disabled"] {
   }
 
   .service-name button {
+    height: auto; 
+    line-height: 24px;
     margin-top: 16px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
   }
 
   /* Service person & company */
@@ -3760,7 +3775,10 @@ button[disabled="disabled"] {
   }
 
   .service-cooperation__form input[type="submit"] {
-    width: 268px;
+    /* width: 268px; */
+    min-width: 268px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
   }
 
   .close-button {
