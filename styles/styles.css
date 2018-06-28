@@ -422,7 +422,12 @@ button[disabled="disabled"] {
 }
 
 .service-name button {
+  height: auto; 
+  min-height: 60px;
+  line-height: 24px;
   margin-top: 73px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
 }
 
 /* Service person & company */
@@ -939,8 +944,16 @@ button[disabled="disabled"] {
 }
 
 .service-program button {
-  background-color: #ed1c24;
   margin-bottom: 63px;
+  background-color: #ed1c24;
+}
+
+.service-program button.button--popup {
+  height: auto; 
+  min-height: 60px; 
+  line-height: 24px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
 }
 
 .service-program .service-order__contacts {
@@ -3220,11 +3233,7 @@ button[disabled="disabled"] {
   }
 
   .service-name button {
-    height: auto; 
-    line-height: 24px;
     margin-top: 16px;
-    padding-top: 10px; 
-    padding-bottom: 10px;
   }
 
   /* Service person & company */
