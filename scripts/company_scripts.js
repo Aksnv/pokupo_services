@@ -124,7 +124,7 @@ $(".service-header__menu-item--7").click(function() {
 /* Offer counter */
 
 function countdownCounter() {
-  var finishDate = new Date(2018, 4, 1);
+  var finishDate = new Date(2018, 9, 1);
   var curentDate = new Date();
 
   if ((curentDate - finishDate) >= 0) {
